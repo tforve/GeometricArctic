@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.Remoting.Contexts;
 using UnityEngine;
+using UnityEngine.Experimental.UIElements;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -26,10 +27,14 @@ public class PlayerMovement : MonoBehaviour
 		{
 			jump = true;
 		}
-		
+
 		if (Input.GetButtonDown("Crouch"))
 		{
 			crouch = true;
+		}
+		else if (Input.GetButtonUp("Crouch"))
+		{
+			crouch = false;
 		}
 	}
 
@@ -37,6 +42,8 @@ public class PlayerMovement : MonoBehaviour
 	{
 		controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
 		jump = false;
+		
+		
 		
 	}
 }

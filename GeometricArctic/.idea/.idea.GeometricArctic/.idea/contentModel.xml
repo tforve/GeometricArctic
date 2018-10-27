@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\MEINS\Workspace\GitHub\Unity\GeometricArctic\GeometricArctic" t="IncludeRecursive">
+    <e p="C:\Users\Tobi\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Tobi\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_GeometricArctic.1905311845.00" t="ExcludeRecursive" />
+    <e p="D:\Workspace\Unity\GeometricArctic\GeometricArctic" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
@@ -20,7 +22,5 @@
         <e p="bin" t="ExcludeRecursive" />
       </e>
     </e>
-    <e p="C:\Users\freek\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\freek\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_GeometricArctic.645833125.00" t="ExcludeRecursive" />
   </component>
 </project>
