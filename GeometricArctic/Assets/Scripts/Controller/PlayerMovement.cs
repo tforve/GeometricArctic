@@ -8,8 +8,9 @@ public class PlayerMovement : MonoBehaviour
 {
 
 	public CharacterController2D controller;
-	
 	public float runSpeed = 40.0f;
+
+	[SerializeField] private Animator animator;
 		
 	private float horizontalMove = 0.0f;
 
@@ -22,10 +23,13 @@ public class PlayerMovement : MonoBehaviour
 	void Update ()
 	{
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+		
+		animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
 		if (Input.GetButtonDown("Jump"))
 		{
 			jump = true;
+			//animator.SetBool("IsJumping", true);
 		}
 
 		if (Input.GetButtonDown("Crouch"))
@@ -36,6 +40,16 @@ public class PlayerMovement : MonoBehaviour
 		{
 			crouch = false;
 		}
+	}
+
+	public void OnCrouching(bool isCrouching)
+	{
+		animator.SetBool("IsCrouching", isCrouching);
+	}
+
+	public void OnLanding()
+	{
+		//animator.SetBool("IsJumping" , false);
 	}
 
 	private void FixedUpdate()

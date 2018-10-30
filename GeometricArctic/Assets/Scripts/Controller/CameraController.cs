@@ -6,7 +6,7 @@ public class CameraController : MonoBehaviour
 {
 
 	[SerializeField] private GameObject target;
-	[SerializeField] private float offsetY, offsetZ;
+	[SerializeField] private float offsetY = 0.25f, offsetZ = 3.0f;
 	
 
 	void Update()
