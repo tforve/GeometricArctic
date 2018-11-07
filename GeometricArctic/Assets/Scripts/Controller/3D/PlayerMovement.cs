@@ -7,7 +7,7 @@ using UnityEngine.Experimental.UIElements;
 public class PlayerMovement : MonoBehaviour
 {
 
-	public CharacterController2D controller;
+	public CharacterController controller;
 	public float runSpeed = 40.0f;
 
 	[SerializeField] private Animator animator;

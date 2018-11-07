@@ -9,9 +9,18 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Controller" t="Include">
+            <e p="2D" t="Include">
+              <e p="CharacterController2D.cs" t="Include" />
+              <e p="PlayerMovement2D.cs" t="Include" />
+            </e>
+            <e p="3D" t="Include">
+              <e p="CharacterController.cs" t="Include" />
+              <e p="PlayerMovement.cs" t="Include" />
+            </e>
             <e p="CameraController.cs" t="Include" />
-            <e p="CharacterController2D.cs" t="Include" />
-            <e p="PlayerMovement.cs" t="Include" />
+          </e>
+          <e p="Particle Systems" t="Include">
+            <e p="DestroyParticleSystem.cs" t="Include" />
           </e>
         </e>
         <e p="Standard Assets" t="Include">

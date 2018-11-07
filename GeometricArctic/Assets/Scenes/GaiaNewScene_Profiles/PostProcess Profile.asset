@@ -81,12 +81,12 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 1.33
+    value: 0.86
   color:
     overrideState: 1
     value: {r: 0, g: 0.8638129, b: 1, a: 1}
   ambientOnly:
-    overrideState: 0
+    overrideState: 1
     value: 1
   noiseFilterTolerance:
     overrideState: 0
