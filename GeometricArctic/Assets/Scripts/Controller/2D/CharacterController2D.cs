@@ -28,7 +28,7 @@ public class CharacterController2D : MonoBehaviour
 	private float PS_spawnToFeetOffsetY = -0.8f;
 	private float PS_spawnToFeetOffsetX = 0.8f;
 	//Move Particle
-	[SerializeField] private ParticleSystem walkParticleSpawn;
+	//[SerializeField] private ParticleSystem walkParticleSpawn;
 
 
 	
@@ -177,7 +177,7 @@ public class CharacterController2D : MonoBehaviour
 			//walkParticleSpawn.Play();
 				
 			//need to be destroyed after a while!!
-			Instantiate(walkParticleSpawn, m_GroundCheck.position, Quaternion.identity).Play();
+			//Instantiate(walkParticleSpawn, m_GroundCheck.position, Quaternion.identity).Play();
 		}
 	}
 
