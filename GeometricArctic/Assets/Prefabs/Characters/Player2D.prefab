@@ -96,7 +96,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1335736889388202}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 40.92, y: -3.27, z: 0}
+  m_LocalPosition: {x: 39.1, y: 0.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4368222660953564}
@@ -203,7 +203,8 @@ MonoBehaviour:
   m_GroundCheck: {fileID: 4374278951951294}
   m_CeilingCheck: {fileID: 4368222660953564}
   m_CrouchDisableCollider: {fileID: 61347225927619174}
-  jumpParticleSpawn: []
+  jumpParticleSpawn:
+  - {fileID: 0}
   walkParticleSpawn: {fileID: 0}
   OnLandEvent:
     m_PersistentCalls:
