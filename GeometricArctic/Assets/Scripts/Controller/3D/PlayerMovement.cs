@@ -4,10 +4,11 @@ using System.Runtime.Remoting.Contexts;
 using UnityEngine;
 using UnityEngine.Experimental.UIElements;
 
+[RequireComponent(typeof(CharacterController3D))]
 public class PlayerMovement : MonoBehaviour
 {
 
-	public CharacterController controller;
+	public CharacterController3D controller;
 	public float runSpeed = 40.0f;
 
 	[SerializeField] private Animator animator;
@@ -22,14 +23,15 @@ public class PlayerMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed*10.0f; //Why so slow
 		
 		animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
 		if (Input.GetButtonDown("Jump"))
 		{
 			jump = true;
-			//animator.SetBool("IsJumping", true);
+			animator.SetBool("HasLanded", false);
+			animator.SetBool("IsJumping", true);
 		}
 
 		if (Input.GetButtonDown("Crouch"))
@@ -49,7 +51,8 @@ public class PlayerMovement : MonoBehaviour
 
 	public void OnLanding()
 	{
-		//animator.SetBool("IsJumping" , false);
+		animator.SetBool("HasLanded", true);
+		animator.SetBool("IsJumping" , false);
 	}
 
 	private void FixedUpdate()

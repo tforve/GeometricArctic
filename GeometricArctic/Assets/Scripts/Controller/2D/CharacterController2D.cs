@@ -31,8 +31,6 @@ public class CharacterController2D : MonoBehaviour
 	//[SerializeField] private ParticleSystem walkParticleSpawn;
 
 
-	
-
 	[Header("Events")]
 	[Space]
 
