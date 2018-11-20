@@ -1,7 +1,5 @@
-using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Experimental.PlayerLoop;
 
 public class CharacterController3D : MonoBehaviour
 {
@@ -11,25 +9,26 @@ public class CharacterController3D : MonoBehaviour
 	public LayerMask m_WhatIsGround;												// A mask determining what is ground to the character
 	
 	[Header("Jumping")]
-	[SerializeField] private float m_JumpForce = 400f;								// Amount of force added when the player jumps.
-	[SerializeField] private bool m_AirControl = false;							// Whether or not a player can steer while jumping;
-	[SerializeField] private float fallMultiplier = 2.5f;							// Adds extra Gravity to the Fall
-	[SerializeField] private float lowJumpMultiplier = 2.0f;						// needed for Jumping higher by hold the Jump button
+	[SerializeField] private float 	m_JumpForce = 400f;								// Amount of force added when the player jumps.
+	[SerializeField] private bool 	m_AirControl = false;							// Whether or not a player can steer while jumping;
+	[SerializeField] private float	fallMultiplier = 2.5f;							// Adds extra Gravity to the Fall
+	[SerializeField] private float 	lowJumpMultiplier = 2.0f;						// needed for Jumping higher by hold the Jump button
 	
 	[Header("Checkers")]
-	[SerializeField] private Transform m_GroundCheck;								// A position marking where to check if the player is grounded.
-	[SerializeField] private Transform m_CeilingCheck;								// A position marking where to check for ceilings
-	[SerializeField] private Collider m_CrouchDisableCollider;						// A collider that will be disabled when crouching
+	[SerializeField] private Transform 	m_GroundCheck;								// A position marking where to check if the player is grounded.
+	[SerializeField] private Transform 	m_CeilingCheck;								// A position marking where to check for ceilings
+	[SerializeField] private Collider 	m_CrouchDisableCollider;					// A collider that will be disabled when crouching
 	
 	[Header("Effects")]
 	//ParticleSystems to the Feet of the Character
-	[SerializeField] private ParticleSystem[] dustEffect;
-	private bool 		spawnDustEffect = false;
+	[SerializeField] private ParticleSystem[] jumpParticleSpawner;
+	private float PS_spawnToFeetOffsetY = -0.8f;
+	private float PS_spawnToFeetOffsetX = 0.8f;
 
+	const float 		k_CeilingRadius = 0.2f; 			// Radius of the overlap circle to determine if the player can stand up
 	const float 		k_GroundedRadius = 0.2f; 			// Radius of the overlap circle to determine if grounded
 	private bool 		m_isGrounded = false;            	// Whether or not the player is grounded.
-	const float 		k_CeilingRadius = 0.2f; 			// Radius of the overlap circle to determine if the player can stand up
-	
+
 	private Rigidbody 	m_Rigidbody;
 	private bool		m_FacingRight = true;  			// For determining which way the player is currently facing.
 	private Vector3		m_Velocity = Vector3.zero;
@@ -56,7 +55,19 @@ public class CharacterController3D : MonoBehaviour
 			OnCrouchEvent = new BoolEvent();
 
 	}
-	
+
+	private bool draw = true;
+
+	private void OnDrawGizmos()
+	{
+		Gizmos.color = Color.red;
+		if (draw)
+		{
+			//Gizmos.DrawWireCube(m_GroundCheck.position, m_GroundCheck.transform.localScale);
+			Gizmos.DrawSphere(m_GroundCheck.position, k_GroundedRadius);
+		}
+	}
+
 	private void FixedUpdate()
 	{
 		bool wasGrounded = m_isGrounded;
@@ -64,18 +75,20 @@ public class CharacterController3D : MonoBehaviour
 		
 		//m_isGrounded = Physics.CheckSphere(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround, QueryTriggerInteraction.Ignore);
 	
-		Collider[] colliders = Physics.OverlapSphere(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
 		
+		Collider[] colliders = Physics.OverlapSphere(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround, QueryTriggerInteraction.Ignore);
+
+		//Collider[] colliders = Physics.OverlapBox(m_GroundCheck.position, m_GroundCheck.localScale / 2, Quaternion.identity,m_WhatIsGround, QueryTriggerInteraction.Ignore);
+
 		for (int i = 0; i < colliders.Length; i++)
 		{
 			if (colliders[i].gameObject != this.gameObject)
 			{
 				m_isGrounded = true;
-				spawnDustEffect = true;
-				spawnDustEffect = false;
 
-				if (!wasGrounded)
+				if (!wasGrounded && m_Rigidbody.velocity.y < 0)
 				{
+					SpawnParticle(false);
 					OnLandEvent.Invoke();
 				}
 
@@ -87,7 +100,8 @@ public class CharacterController3D : MonoBehaviour
 		{
 			m_Rigidbody.velocity += Vector3.up * Physics2D.gravity.y * (fallMultiplier -1) * Time.fixedDeltaTime;
 		}
-		else if (m_Rigidbody.velocity.y > 0 && !Input.GetButton("Jump")) // Hold Jumpbutton longer jump highter
+		// Hold Jumpbutton longer jump higher
+		else if (m_Rigidbody.velocity.y > 0 && !Input.GetButton("Jump")) 
 		{
 			m_Rigidbody.velocity += Vector3.up * Physics2D.gravity.y * (lowJumpMultiplier -1) * Time.fixedDeltaTime;
 		}
@@ -146,13 +160,11 @@ public class CharacterController3D : MonoBehaviour
 			// If the input is moving the player right and the player is facing left...
 			if (move > 0 && !m_FacingRight)
 			{
-				// ... flip the player.
 				Flip();
 			}
 			// Otherwise if the input is moving the player left and the player is facing right...
 			else if (move < 0 && m_FacingRight)
 			{
-				// ... flip the player.
 				Flip();
 			}
 		}
@@ -162,15 +174,35 @@ public class CharacterController3D : MonoBehaviour
 		{
 			m_isGrounded = false;
 			m_Rigidbody.AddForce(transform.up * m_JumpForce, ForceMode.Impulse);
+			SpawnParticle(true);
+		}
+	}
+	
+	/// <summary>
+	/// Spawn Particle to the Feet depending if Jumping or landing
+	/// </summary>
+	/// <param name="jump"></param>
+	private void SpawnParticle(bool jump)
+	{
+		if (jump)
+		{
+			PS_spawnToFeetOffsetX *= -1;
+		}
+
+		for (int j = 0; j < jumpParticleSpawner.Length; j++)
+		{
+			jumpParticleSpawner[j].transform.position = this.transform.position + (new Vector3(PS_spawnToFeetOffsetX, PS_spawnToFeetOffsetY, 0.0f));
+			jumpParticleSpawner[j].Play();
 		}
 	}
 
+	/// <summary>
+	/// // Switch the way the player is labelled as facing.
+	/// </summary>
 	private void Flip()
 	{
-		// Switch the way the player is labelled as facing.
+		
 		m_FacingRight = !m_FacingRight;
-
-		// Multiply the player's x local scale by -1.
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
