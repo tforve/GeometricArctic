@@ -4,8 +4,8 @@ using UnityEngine.Events;
 public class CharacterController3D : MonoBehaviour
 {
 	[Header("Movement Modifiers")]
-	[Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;				// Amount of maxSpeed applied to crouching movement. 1 = 100%
-	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;		// How much to smooth out the movement
+	[Range(0, 1)] 	[SerializeField] private float	m_CrouchSpeed = .36f;			// Amount of maxSpeed applied to crouching movement. 1 = 100%
+	[Range(0, .3f)] [SerializeField] private float 	m_MovementSmoothing = .05f;		// How much to smooth out the movement
 	public LayerMask m_WhatIsGround;												// A mask determining what is ground to the character
 	
 	[Header("Jumping")]
@@ -20,8 +20,7 @@ public class CharacterController3D : MonoBehaviour
 	[SerializeField] private Collider 	m_CrouchDisableCollider;					// A collider that will be disabled when crouching
 	
 	[Header("Effects")]
-	//ParticleSystems to the Feet of the Character
-	[SerializeField] private ParticleSystem[] jumpParticleSpawner;
+	[SerializeField] private ParticleSystem[] jumpParticleSpawner;					//ParticleSystems to the Feet of the Character
 	private float PS_spawnToFeetOffsetY = -0.8f;
 	private float PS_spawnToFeetOffsetX = 0.8f;
 
@@ -30,19 +29,19 @@ public class CharacterController3D : MonoBehaviour
 	private bool 		m_isGrounded = false;            	// Whether or not the player is grounded.
 
 	private Rigidbody 	m_Rigidbody;
-	private bool		m_FacingRight = true;  			// For determining which way the player is currently facing.
+	private bool		m_FacingRight = true;  				// For determining which way the player is currently facing.
 	private Vector3		m_Velocity = Vector3.zero;
 	
 	[Header("Events")][Space]
-	public UnityEvent OnLandEvent;
+	public UnityEvent	OnLandEvent;
 
 	[System.Serializable]
 	public class BoolEvent : UnityEvent<bool> { }
 
-	public BoolEvent OnCrouchEvent;
-	private bool m_wasCrouching = false;
+	public BoolEvent 	OnCrouchEvent;
+	private bool		m_wasCrouching = false;
 
-	// ----------------- HEADER END
+	// -------------------------------- 
 	
 	private void Awake()
 	{
