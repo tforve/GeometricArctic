@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class CharacterController3D : MonoBehaviour
 {
@@ -11,8 +12,8 @@ public class CharacterController3D : MonoBehaviour
 	[Header("Jumping")]
 	[SerializeField] private float 	m_JumpForce = 400f;								// Amount of force added when the player jumps.
 	[SerializeField] private bool 	m_AirControl = false;							// Whether or not a player can steer while jumping;
-	[SerializeField] private float	fallMultiplier = 2.5f;							// Adds extra Gravity to the Fall
-	[SerializeField] private float 	lowJumpMultiplier = 2.0f;						// needed for Jumping higher by hold the Jump button
+	[SerializeField] private float	m_FallMultiplier = 2.5f;							// Adds extra Gravity to the Fall
+	[SerializeField] private float 	m_LowJumpMultiplier = 2.0f;						// needed for Jumping higher by hold the Jump button
 	
 	[Header("Checkers")]
 	[SerializeField] private Transform 	m_GroundCheck;								// A position marking where to check if the player is grounded.
@@ -20,7 +21,7 @@ public class CharacterController3D : MonoBehaviour
 	[SerializeField] private Collider 	m_CrouchDisableCollider;					// A collider that will be disabled when crouching
 	
 	[Header("Effects")]
-	[SerializeField] private ParticleSystem[] jumpParticleSpawner;					//ParticleSystems to the Feet of the Character
+	[SerializeField] private ParticleSystem[] m_JumpParticleSpawner;					//ParticleSystems to the Feet of the Character
 	private float PS_spawnToFeetOffsetY = -0.8f;
 	private float PS_spawnToFeetOffsetX = 0.8f;
 
@@ -97,12 +98,12 @@ public class CharacterController3D : MonoBehaviour
 		//If Falling, add bit velocity to Falling 
 		if (m_Rigidbody.velocity.y > 0)
 		{
-			m_Rigidbody.velocity += Vector3.up * Physics2D.gravity.y * (fallMultiplier -1) * Time.fixedDeltaTime;
+			m_Rigidbody.velocity += Vector3.up * Physics2D.gravity.y * (m_FallMultiplier -1) * Time.fixedDeltaTime;
 		}
 		// Hold Jumpbutton longer jump higher
 		else if (m_Rigidbody.velocity.y > 0 && !Input.GetButton("Jump")) 
 		{
-			m_Rigidbody.velocity += Vector3.up * Physics2D.gravity.y * (lowJumpMultiplier -1) * Time.fixedDeltaTime;
+			m_Rigidbody.velocity += Vector3.up * Physics2D.gravity.y * (m_LowJumpMultiplier -1) * Time.fixedDeltaTime;
 		}
 	}
 
@@ -188,10 +189,10 @@ public class CharacterController3D : MonoBehaviour
 			PS_spawnToFeetOffsetX *= -1;
 		}
 
-		for (int j = 0; j < jumpParticleSpawner.Length; j++)
+		for (int j = 0; j < m_JumpParticleSpawner.Length; j++)
 		{
-			jumpParticleSpawner[j].transform.position = this.transform.position + (new Vector3(PS_spawnToFeetOffsetX, PS_spawnToFeetOffsetY, 0.0f));
-			jumpParticleSpawner[j].Play();
+			m_JumpParticleSpawner[j].transform.position = this.transform.position + (new Vector3(PS_spawnToFeetOffsetX, PS_spawnToFeetOffsetY, 0.0f));
+			m_JumpParticleSpawner[j].Play();
 		}
 	}
 
