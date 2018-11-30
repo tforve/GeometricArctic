@@ -8,17 +8,19 @@ using UnityEngine.Experimental.UIElements;
 public class PlayerMovement : MonoBehaviour
 {
 
-	public CharacterController3D controller;
-	public float runSpeed = 40.0f;
-
+	[SerializeField] private float runSpeed = 40.0f;
 	[SerializeField] private Animator animator;
-		
+	private CharacterController3D controller;
 	private float horizontalMove = 0.0f;
-
 	private bool jump = false;
 	private bool crouch = false;
-	
-	
+
+
+	void Start()
+	{
+		controller = GetComponent<CharacterController3D>();
+	}
+
 
 	// Update is called once per frame
 	void Update ()

@@ -25,8 +25,8 @@ public class CharacterController3D : MonoBehaviour
 	private float PS_spawnToFeetOffsetY = -0.8f;
 	private float PS_spawnToFeetOffsetX = 0.8f;
 
-	const float 		k_CeilingRadius = 0.2f; 			// Radius of the overlap circle to determine if the player can stand up
-	const float 		k_GroundedRadius = 0.2f; 			// Radius of the overlap circle to determine if grounded
+	public float 		k_CeilingRadius = 0.2f; 			// Radius of the overlap circle to determine if the player can stand up
+	public float 		k_GroundedRadius = 0.2f; 			// Radius of the overlap circle to determine if grounded
 	private bool 		m_isGrounded = false;            	// Whether or not the player is grounded.
 
 	private Rigidbody 	m_Rigidbody;
@@ -64,7 +64,7 @@ public class CharacterController3D : MonoBehaviour
 		if (draw)
 		{
 			//Gizmos.DrawWireCube(m_GroundCheck.position, m_GroundCheck.transform.localScale);
-			Gizmos.DrawSphere(m_GroundCheck.position, k_GroundedRadius);
+			Gizmos.DrawSphere(m_GroundCheck.position , k_GroundedRadius);
 		}
 	}
 
@@ -72,12 +72,13 @@ public class CharacterController3D : MonoBehaviour
 	{
 		bool wasGrounded = m_isGrounded;
 		m_isGrounded = false;
+		Debug.Log(m_Rigidbody.velocity.y);
+
+		//OK also die Velocity.y ist das problem.
 		
 		//m_isGrounded = Physics.CheckSphere(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround, QueryTriggerInteraction.Ignore);
-	
-		
-		Collider[] colliders = Physics.OverlapSphere(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround, QueryTriggerInteraction.Ignore);
 
+		Collider[] colliders = Physics.OverlapSphere(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround, QueryTriggerInteraction.Ignore);
 		//Collider[] colliders = Physics.OverlapBox(m_GroundCheck.position, m_GroundCheck.localScale / 2, Quaternion.identity,m_WhatIsGround, QueryTriggerInteraction.Ignore);
 
 		for (int i = 0; i < colliders.Length; i++)
@@ -88,6 +89,7 @@ public class CharacterController3D : MonoBehaviour
 
 				if (!wasGrounded && m_Rigidbody.velocity.y < 0)
 				{
+					//Debug.Log("Onland" + m_Rigidbody.velocity.y);
 					SpawnParticle(false);
 					OnLandEvent.Invoke();
 				}
@@ -201,7 +203,6 @@ public class CharacterController3D : MonoBehaviour
 	/// </summary>
 	private void Flip()
 	{
-		
 		m_FacingRight = !m_FacingRight;
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;

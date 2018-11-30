@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 136715561369976020}
   - component: {fileID: 114063573016221108}
   - component: {fileID: 114043851804476764}
+  - component: {fileID: 114136969254293260}
   m_Layer: 8
   m_Name: Player3D
   m_TagString: Untagged
@@ -70,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1974411570662016}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.8, z: 0}
+  m_LocalPosition: {x: 0, y: -0.77, z: 0}
   m_LocalScale: {x: 5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4827420975914680}
@@ -82,8 +83,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1748042983550088}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.5, y: 7.79, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4942850801209336}
@@ -165,15 +166,17 @@ MonoBehaviour:
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 567
-  m_JumpForce: 15
+  m_JumpForce: 5
   m_AirControl: 1
-  fallMultiplier: 2.5
-  lowJumpMultiplier: 2
+  m_FallMultiplier: 2.5
+  m_LowJumpMultiplier: 2
   m_GroundCheck: {fileID: 4319982785251620}
   m_CeilingCheck: {fileID: 4942850801209336}
   m_CrouchDisableCollider: {fileID: 65776206604054336}
-  jumpParticleSpawner:
+  m_JumpParticleSpawner:
   - {fileID: 0}
+  k_CeilingRadius: 0.2
+  k_GroundedRadius: 0.22
   OnLandEvent:
     m_PersistentCalls:
       m_Calls:
@@ -217,22 +220,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ad8546c8339f742b5a4b7035e66d18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 114043851804476764}
   runSpeed: 10
   animator: {fileID: 95706528647247650}
+--- !u!114 &114136969254293260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1748042983550088}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 495c5d228cb1b1b46ad7955b3e39bbaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  maxHealth: 5
+  healths:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  emptyHealth_even: {fileID: 21300002, guid: 6c3f851466b1a3042acc6c4259a0bbf5, type: 3}
+  emptyHealth_odd: {fileID: 21300000, guid: 6c3f851466b1a3042acc6c4259a0bbf5, type: 3}
+  filledHealth_even: {fileID: 21300004, guid: 6c3f851466b1a3042acc6c4259a0bbf5, type: 3}
+  filledHealth_odd: {fileID: 21300006, guid: 6c3f851466b1a3042acc6c4259a0bbf5, type: 3}
 --- !u!136 &136715561369976020
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1748042983550088}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 8b14496f40b4ff5498dd142b8c466c67, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.67
   m_Height: 5
   m_Direction: 0
-  m_Center: {x: 0, y: -0.27, z: 0}
+  m_Center: {x: 0, y: -0.29, z: 0}
 --- !u!212 &212097693266382990
 SpriteRenderer:
   m_ObjectHideFlags: 1

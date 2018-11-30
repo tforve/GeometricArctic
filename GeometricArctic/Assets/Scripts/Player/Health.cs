@@ -81,7 +81,7 @@ public class Health : MonoBehaviour
             //set correct amount of Triangles
             if (currentTriangle < maxHealth)
             {
-                healths[currentTriangle].enabled = true;
+                    healths[currentTriangle].enabled = true;
             }
             else
             {
@@ -91,7 +91,7 @@ public class Health : MonoBehaviour
             // check if lower health then maxHealth
             if (currentTriangle < health)
             {
-                int tmp = currentTriangle & 1; // & 1 is 0 for everything thats divided by 2 = 0
+                int tmp = currentTriangle & 1;
                 if (tmp == 0)
                 {
                     healths[currentTriangle].sprite = filledHealth_even;
