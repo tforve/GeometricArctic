@@ -46,6 +46,11 @@ public class Health : MonoBehaviour
         {
             Hit(2);
         }
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            ReplanishHealth(1);
+        }
     }
 
     /// <summary>
@@ -57,7 +62,13 @@ public class Health : MonoBehaviour
         health -= dmg;
         UpdateHealth();
     }
-    
+
+    public void ReplanishHealth(int hp)
+    {
+        health += hp;
+        UpdateHealth();
+    }
+
     /// <summary>
     /// Player Dies. Needs to be implemented.
     /// </summary>> 
