@@ -4,6 +4,9 @@ using System.Runtime.Remoting.Contexts;
 using UnityEngine;
 using UnityEngine.Experimental.UIElements;
 
+//Forms the Player can switch to 
+public enum Shapes {human, fox, owl, robbe};
+
 [RequireComponent(typeof(CharacterController3D))]
 public class PlayerMovement : MonoBehaviour
 {
@@ -15,10 +18,20 @@ public class PlayerMovement : MonoBehaviour
 	private bool jump = false;
 	private bool crouch = false;
 
+	// Shapeshifting
+	private ShapeshiftController shapeshiftController;
+
+	public float MyRunSpeed
+	{
+		get{return runSpeed;}
+		set{runSpeed = value;}
+	}
+
 
 	void Start()
 	{
 		controller = GetComponent<CharacterController3D>();
+		shapeshiftController = GetComponent<ShapeshiftController>();
 	}
 
 
@@ -43,6 +56,15 @@ public class PlayerMovement : MonoBehaviour
 		else if (Input.GetButtonUp("Crouch"))
 		{
 			crouch = false;
+		}
+
+		if(Input.GetButtonDown("ShiftToHuman"))
+		{
+			shapeshiftController.SwitchShape(Shapes.human);
+		}
+		if(Input.GetButtonDown("ShiftToFox"))
+		{
+			shapeshiftController.SwitchShape(Shapes.fox);
 		}
 	}
 

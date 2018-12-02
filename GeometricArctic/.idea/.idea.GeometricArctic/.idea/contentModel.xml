@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\MEINS\Workspace\GitHub\Unity\GeometricArctic\GeometricArctic" t="IncludeRecursive">
+    <e p="C:\Users\Tobi\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Tobi\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_GeometricArctic.1905311845.00" t="ExcludeRecursive" />
+    <e p="D:\Workspace\Unity\GeometricArctic\GeometricArctic" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
@@ -192,9 +194,9 @@
               <e p="PlayerMovement.cs" t="Include" />
             </e>
             <e p="CameraController.cs" t="Include" />
+            <e p="ShapeshiftController.cs" t="Include" />
           </e>
           <e p="Particle Systems" t="Include">
-            <e p="DashImproved.cs" t="Include" />
             <e p="DestroyParticleSystem.cs" t="Include" />
             <e p="MoveParticlesToTarget.cs" t="Include" />
           </e>
@@ -388,7 +390,5 @@
         <e p="bin" t="ExcludeRecursive" />
       </e>
     </e>
-    <e p="C:\Users\freek\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\freek\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_GeometricArctic.645833125.00" t="ExcludeRecursive" />
   </component>
 </project>
