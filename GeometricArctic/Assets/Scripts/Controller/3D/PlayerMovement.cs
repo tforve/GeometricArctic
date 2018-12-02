@@ -4,32 +4,49 @@ using System.Runtime.Remoting.Contexts;
 using UnityEngine;
 using UnityEngine.Experimental.UIElements;
 
+//Forms the Player can switch to 
+public enum Shapes {human, fox, owl, robbe};
+
+[RequireComponent(typeof(CharacterController3D))]
 public class PlayerMovement : MonoBehaviour
 {
 
-	public CharacterController controller;
-	public float runSpeed = 40.0f;
-
+	[SerializeField] private float runSpeed = 40.0f;
 	[SerializeField] private Animator animator;
-		
+	private CharacterController3D controller;
 	private float horizontalMove = 0.0f;
-
 	private bool jump = false;
 	private bool crouch = false;
-	
-	
+
+	// Shapeshifting
+	private ShapeshiftController shapeshiftController;
+
+	public float MyRunSpeed
+	{
+		get{return runSpeed;}
+		set{runSpeed = value;}
+	}
+
+
+	void Start()
+	{
+		controller = GetComponent<CharacterController3D>();
+		shapeshiftController = GetComponent<ShapeshiftController>();
+	}
+
 
 	// Update is called once per frame
 	void Update ()
 	{
-		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed*10.0f; //Why so slow
 		
 		animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
 		if (Input.GetButtonDown("Jump"))
 		{
 			jump = true;
-			//animator.SetBool("IsJumping", true);
+			animator.SetBool("HasLanded", false);
+			animator.SetBool("IsJumping", true);
 		}
 
 		if (Input.GetButtonDown("Crouch"))
@@ -40,6 +57,15 @@ public class PlayerMovement : MonoBehaviour
 		{
 			crouch = false;
 		}
+
+		if(Input.GetButtonDown("ShiftToHuman"))
+		{
+			shapeshiftController.SwitchShape(Shapes.human);
+		}
+		if(Input.GetButtonDown("ShiftToFox"))
+		{
+			shapeshiftController.SwitchShape(Shapes.fox);
+		}
 	}
 
 	public void OnCrouching(bool isCrouching)
@@ -49,7 +75,8 @@ public class PlayerMovement : MonoBehaviour
 
 	public void OnLanding()
 	{
-		//animator.SetBool("IsJumping" , false);
+		animator.SetBool("HasLanded", true);
+		animator.SetBool("IsJumping" , false);
 	}
 
 	private void FixedUpdate()

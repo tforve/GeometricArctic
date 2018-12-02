@@ -12,8 +12,6 @@ public class PlayerMovement2D : MonoBehaviour
 
 	[SerializeField] private Animator animator;
 	
-	
-		
 	private float horizontalMove = 0.0f;
 
 	private bool jump = false;

@@ -4,49 +4,10 @@
     <list default="true" id="03d24173-8b80-4ff6-ad79-a85379e9c5f7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GeometricArctic/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeometricArctic/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GeometricArctic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeometricArctic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Fox/Fox_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Fox/Fox_Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Fox/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Fox/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Particle Systems/PS_Falling Snow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Particle Systems/PS_Falling Snow.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GaiaNewScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GaiaNewScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GaiaNewScene_Profiles/PostProcess Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GaiaNewScene_Profiles/PostProcess Profile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/CharacterController2D.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/CharacterController2D.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/PlayerMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/PlayerMovement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Idle/Idle00.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Idle/Idle00.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Idle/Idle00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Idle/Idle00.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Idle/Idle01.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Idle/Idle01.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Idle/Idle01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Idle/Idle01.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Idle/Idle03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Idle/Idle03.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk00.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk00.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk00.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk01.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk01.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk01.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk02.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk02.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk02.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk03.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk03.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk03.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/World/Ground/Ground_Geometric_02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/World/Ground/Ground_Geometric_02.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/World/Ground/Ground_Geometric_Down.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/World/Ground/Ground_Geometric_Down.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/World/Ground/Ground_Geometric_Up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/World/Ground/Ground_Geometric_Up.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/World/Ground/Tiles/Ground_Geometric_01.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/World/Ground/Tiles/Ground_Geometric_01.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/World/Ground/Tiles/Ground_Geometric_Down.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/World/Ground/Tiles/Ground_Geometric_Down.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/World/Ground/Tiles/Ground_Geometric_Up.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/World/Ground/Tiles/Ground_Geometric_Up.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/World/Ground/groundTile_whiteRamp_Down.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/World/Ground/groundTile_whiteRamp_Down.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/World/Ground/groundTile_whiteRamp_Down.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/World/Ground/groundTile_whiteRamp_Down.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/World/Ground/groundTile_whiteRamp_Up.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/World/Ground/groundTile_whiteRamp_Up.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/World/Ground/groundTile_whiteRamp_Up.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/World/Ground/groundTile_whiteRamp_Up.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/World/Ground/groundTiles_planeWhite.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/World/Ground/groundTiles_planeWhite.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tiles/GroundTiles.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiles/GroundTiles.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level00.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level00.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/3D/CharacterController3D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/3D/CharacterController3D.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/3D/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/3D/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,14 +19,15 @@
     <session id="-244349369">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.34" value="3" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.39" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -80,12 +42,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="4030" />
+          <entry key="cs" value="4101" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="4030" />
+          <entry key="C#" value="4101" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -94,94 +56,116 @@
     <session id="-610394486">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="184" />
+          <entry key="cs" value="7648" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="184" />
+          <entry key="C#" value="7648" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.vcs.git.usages" />
-      <usages-collector id="statistics.file.types.open" />
-      <usages-collector id="statistics.file.extensions.open" />
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="27" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="27" />
+        </counts>
+      </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/3D/PlayerMovement.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/2D/CharacterController2D.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/3D/CharacterController3D.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="153" column="13" selection-start-line="153" selection-start-column="13" selection-end-line="153" selection-end-column="13" />
+            <state relative-caret-position="180">
+              <caret line="14" column="84" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
               <folding>
-                <marker date="1541611723500" expanded="true" signature="6:115" ph="..." />
-                <marker date="1541611723500" expanded="true" signature="167:6139" ph="{...}" />
-                <marker date="1541611723500" expanded="true" signature="1559:1577" ph="/* Particle ... */" />
-                <marker date="1541611723500" expanded="true" signature="2041:2223" ph="{...}" />
-                <marker date="1541611723500" expanded="true" signature="2252:3155" ph="{...}" />
-                <marker date="1541611723500" expanded="true" signature="2314:2521" ph="/* The player is grounded if a circlecast to the groundcheck position hits anything designated as ground ... */" />
-                <marker date="1541611723500" expanded="true" signature="2679:3152" ph="{...}" />
-                <marker date="1541611723500" expanded="true" signature="2729:3148" ph="{...}" />
-                <marker date="1541611723500" expanded="true" signature="2812:3142" ph="{...}" />
-                <marker date="1541611723500" expanded="true" signature="2917:3107" ph="{...}" />
-                <marker date="1541611723500" expanded="true" signature="3211:5447" ph="{...}" />
-                <marker date="1541611723500" expanded="true" signature="3291:3509" ph="{...}" />
-                <marker date="1541611723500" expanded="true" signature="3476:3505" ph="{...}" />
-                <marker date="1541611723500" expanded="true" signature="3611:4982" ph="{...}" />
-                <marker date="1541611723500" expanded="true" signature="3650:3979" ph="{...}" />
-                <marker date="1541611723500" expanded="true" signature="3680:3753" ph="{...}" />
-                <marker date="1541611723500" expanded="true" signature="3984:4226" ph="{...}" />
-                <marker date="1541611723500" expanded="true" signature="4146:4221" ph="{...}" />
-                <marker date="1541611723500" expanded="true" signature="4750:4800" ph="{...}" />
-                <marker date="1541611723500" expanded="true" signature="4928:4978" ph="{...}" />
-                <marker date="1541611723500" expanded="true" signature="5042:5444" ph="{...}" />
-                <marker date="1541611723500" expanded="true" signature="5257:5440" ph="{...}" />
-                <marker date="1541611723500" expanded="true" signature="5488:5843" ph="{...}" />
-                <marker date="1541611723500" expanded="true" signature="5547:5840" ph="{...}" />
-                <marker date="1541611723500" expanded="true" signature="5555:5749" ph="/* walkParticleSpawn.transform.position = this.transform.position + (new Vector3(0.0f, PS_spawnToFeetOffsetY, 0.0 ... */" />
-                <marker date="1541611723500" expanded="true" signature="5865:6137" ph="{...}" />
+                <marker date="1543785350182" expanded="false" signature="6:77" ph="..." />
+                <marker date="1543785350182" expanded="true" signature="129:6908" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="2407:2470" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="2494:2736" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="2794:2999" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="2837:2996" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="3028:4268" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="3575:3842" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="3630:3838" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="3713:3832" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="3924:4039" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="4147:4265" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="4324:6187" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="4404:4629" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="4596:4625" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="4733:5959" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="4772:5101" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="4802:4875" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="5106:5348" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="5268:5343" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="5783:5805" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="5933:5955" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="6055:6184" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="6191:6317" ph="/// Spawn Particle to the Feet depending if Jumping or landing ... " />
+                <marker date="1543785350182" expanded="true" signature="6356:6658" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="6371:6411" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="6469:6655" ph="{...}" />
+                <marker date="1543785350182" expanded="true" signature="6661:6747" ph="/// // Switch the way the player is labelled as facing. ... " />
+                <marker date="1543785350182" expanded="true" signature="6768:6906" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Particle Systems/DestroyParticleSystem.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Health.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-              <folding>
-                <marker date="1541610841863" expanded="false" signature="6:78" ph="..." />
-                <marker date="1541610841863" expanded="true" signature="131:223" ph="{...}" />
-                <marker date="1541610841863" expanded="true" signature="181:219" ph="{...}" />
-              </folding>
+            <state>
+              <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/2D/PlayerMovement2D.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/ShapeshiftController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+            <state>
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
               <folding>
-                <marker date="1541606558261" expanded="false" signature="6:161" ph="..." />
-                <marker date="1541606558261" expanded="true" signature="208:1307" ph="{...}" />
-                <marker date="1541606558261" expanded="true" signature="492:894" ph="{...}" />
-                <marker date="1541606558261" expanded="true" signature="655:760" ph="{...}" />
-                <marker date="1541606558261" expanded="true" signature="798:824" ph="{...}" />
-                <marker date="1541606558261" expanded="true" signature="864:891" ph="{...}" />
-                <marker date="1541606558261" expanded="true" signature="938:992" ph="{...}" />
-                <marker date="1541606558261" expanded="true" signature="1018:1180" ph="{...}" />
-                <marker date="1541606558261" expanded="true" signature="1209:1302" ph="{...}" />
+                <marker date="1543785176345" expanded="false" signature="6:78" ph="..." />
+                <marker date="1543785176345" expanded="true" signature="130:2657" ph="{...}" />
+                <marker date="1543785176345" expanded="true" signature="967:1207" ph="{...}" />
+                <marker date="1543785176345" expanded="true" signature="1291:1455" ph="{...}" />
+                <marker date="1543785176345" expanded="true" signature="1297:1452" ph="/* alle Collider durchlaufen und die jetzt AKTIVEN.enable = false setzen. ... */" />
+                <marker date="1543785176345" expanded="true" signature="1459:1564" ph="/// Handle the complete Shapeshifting.  ... " />
+                <marker date="1543785176345" expanded="true" signature="1604:2653" ph="{...}" />
+                <marker date="1543785176345" expanded="true" signature="1647:2647" ph="{...}" />
+                <marker date="1543785176345" expanded="true" signature="1678:1808" ph="/* collider aktivieren ... */" />
+                <marker date="1543785176345" expanded="true" signature="1936:2066" ph="/* collider aktivieren ... */" />
+                <marker date="1543785176345" expanded="true" signature="2195:2325" ph="/* collider aktivieren ... */" />
+                <marker date="1543785176345" expanded="true" signature="2433:2563" ph="/* collider aktivieren ... */" />
               </folding>
             </state>
           </provider>
@@ -193,14 +177,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Environment/Water/Water/Scripts/Water.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2F14D49E-DC70-4940-AEE5-57642343F344/c5/4c2627d3/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Particle Systems/DestroyParticleSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Health.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/ShapeshiftController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/2D/PlayerMovement2D.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E635F8C4-E065-42FD-9980-DE39052F5E36/42/8c4546f3/Physics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/2D/CharacterController2D.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/08394C63-1CD4-4319-A0C1-98F4783B9769/04/0731e3b0/Animator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/3D/CharacterController3D.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/3D/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -210,9 +193,20 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/PlayerMovement2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/CharacterController2D.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/2D/PlayerMovement2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Particle Systems/DestroyParticleSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/2D/PlayerMovement2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/3D/PlayerMovement3D.cs" />
+        <option value="$PROJECT_DIR$/Assets/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/3D/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/3D/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/3D/OLD/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/3D/OLD/CharacterController3D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/2D/CharacterController2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/3D/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Particle Systems/DashImproved.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/ShapeshiftController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/3D/CharacterController3D.cs" />
       </list>
     </option>
   </component>
@@ -223,7 +217,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-54" />
+    <option name="x" value="-55" />
     <option name="y" value="-10" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
@@ -234,6 +228,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -259,12 +254,18 @@
               <item name="Controller" type="1045f7f1:UnityExplorerNode" />
               <item name="2D" type="1045f7f1:UnityExplorerNode" />
             </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Controller" type="1045f7f1:UnityExplorerNode" />
+              <item name="3D" type="1045f7f1:UnityExplorerNode" />
+            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-hidden-items" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
@@ -322,11 +323,15 @@
       <workItem from="1541525026654" duration="3137000" />
       <workItem from="1541581647995" duration="1897000" />
       <workItem from="1541602885679" duration="7610000" />
+      <workItem from="1542490749029" duration="10329000" />
+      <workItem from="1542617172879" duration="9554000" />
+      <workItem from="1542901294970" duration="21983000" />
+      <workItem from="1543784611841" duration="757000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34658000" />
+    <option name="totallyTimeSpent" value="84005000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -340,7 +345,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15458423" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.141258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -365,6 +370,32 @@
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Unit Tests Coverage" order="5" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17986578" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -386,13 +417,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterController2D.cs" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/08394C63-1CD4-4319-A0C1-98F4783B9769/04/0731e3b0/Animator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/08394C63-1CD4-4319-A0C1-98F4783B9769/04/0731e3b0/Animator.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/CameraController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -400,93 +425,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E635F8C4-E065-42FD-9980-DE39052F5E36/42/8c4546f3/Physics.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="912" column="29" selection-start-line="912" selection-start-column="29" selection-end-line="912" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E635F8C4-E065-42FD-9980-DE39052F5E36/42/8c4546f3/Physics.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/CharacterController2D1.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/PlayerMovement.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/CharacterController.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/PlayerMovement2D.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/CharacterController2D.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/Environment/Water/Water/Scripts/Water.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1744">
-          <caret line="111" selection-start-line="111" selection-end-line="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2F14D49E-DC70-4940-AEE5-57642343F344/c5/4c2627d3/UnityEvent.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Particle Systems/DestroyParticleSystem.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding>
-            <marker date="1541610841863" expanded="false" signature="6:78" ph="..." />
-            <marker date="1541610841863" expanded="true" signature="131:223" ph="{...}" />
-            <marker date="1541610841863" expanded="true" signature="181:219" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/Environment/Water/Water/Scripts/Water.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2F14D49E-DC70-4940-AEE5-57642343F344/c5/4c2627d3/UnityEvent.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Particle Systems/DestroyParticleSystem.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/CameraMotor.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/PlayerInput.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/3D/PlayerController.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/3D/PlayerMovement3D.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/2D/PlayerMovement2D.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+        <state relative-caret-position="-90">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/3D/OLD/CharacterController3D.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/3D/PlayerInput.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/3D/OLD/PlayerMovement.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/2D/CharacterController2D.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-960">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2F14D49E-DC70-4940-AEE5-57642343F344/0d/ebcdd451/Vector3.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Particle Systems/DashImproved.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="67" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/3D/PlayerMovement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Health.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/ShapeshiftController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding>
-            <marker date="1541606558261" expanded="false" signature="6:161" ph="..." />
-            <marker date="1541606558261" expanded="true" signature="208:1307" ph="{...}" />
-            <marker date="1541606558261" expanded="true" signature="492:894" ph="{...}" />
-            <marker date="1541606558261" expanded="true" signature="655:760" ph="{...}" />
-            <marker date="1541606558261" expanded="true" signature="798:824" ph="{...}" />
-            <marker date="1541606558261" expanded="true" signature="864:891" ph="{...}" />
-            <marker date="1541606558261" expanded="true" signature="938:992" ph="{...}" />
-            <marker date="1541606558261" expanded="true" signature="1018:1180" ph="{...}" />
-            <marker date="1541606558261" expanded="true" signature="1209:1302" ph="{...}" />
+            <marker date="1543785176345" expanded="false" signature="6:78" ph="..." />
+            <marker date="1543785176345" expanded="true" signature="130:2657" ph="{...}" />
+            <marker date="1543785176345" expanded="true" signature="967:1207" ph="{...}" />
+            <marker date="1543785176345" expanded="true" signature="1291:1455" ph="{...}" />
+            <marker date="1543785176345" expanded="true" signature="1297:1452" ph="/* alle Collider durchlaufen und die jetzt AKTIVEN.enable = false setzen. ... */" />
+            <marker date="1543785176345" expanded="true" signature="1459:1564" ph="/// Handle the complete Shapeshifting.  ... " />
+            <marker date="1543785176345" expanded="true" signature="1604:2653" ph="{...}" />
+            <marker date="1543785176345" expanded="true" signature="1647:2647" ph="{...}" />
+            <marker date="1543785176345" expanded="true" signature="1678:1808" ph="/* collider aktivieren ... */" />
+            <marker date="1543785176345" expanded="true" signature="1936:2066" ph="/* collider aktivieren ... */" />
+            <marker date="1543785176345" expanded="true" signature="2195:2325" ph="/* collider aktivieren ... */" />
+            <marker date="1543785176345" expanded="true" signature="2433:2563" ph="/* collider aktivieren ... */" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/2D/CharacterController2D.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/3D/CharacterController3D.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="153" column="13" selection-start-line="153" selection-start-column="13" selection-end-line="153" selection-end-column="13" />
+        <state relative-caret-position="180">
+          <caret line="14" column="84" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
           <folding>
-            <marker date="1541611723500" expanded="true" signature="6:115" ph="..." />
-            <marker date="1541611723500" expanded="true" signature="167:6139" ph="{...}" />
-            <marker date="1541611723500" expanded="true" signature="1559:1577" ph="/* Particle ... */" />
-            <marker date="1541611723500" expanded="true" signature="2041:2223" ph="{...}" />
-            <marker date="1541611723500" expanded="true" signature="2252:3155" ph="{...}" />
-            <marker date="1541611723500" expanded="true" signature="2314:2521" ph="/* The player is grounded if a circlecast to the groundcheck position hits anything designated as ground ... */" />
-            <marker date="1541611723500" expanded="true" signature="2679:3152" ph="{...}" />
-            <marker date="1541611723500" expanded="true" signature="2729:3148" ph="{...}" />
-            <marker date="1541611723500" expanded="true" signature="2812:3142" ph="{...}" />
-            <marker date="1541611723500" expanded="true" signature="2917:3107" ph="{...}" />
-            <marker date="1541611723500" expanded="true" signature="3211:5447" ph="{...}" />
-            <marker date="1541611723500" expanded="true" signature="3291:3509" ph="{...}" />
-            <marker date="1541611723500" expanded="true" signature="3476:3505" ph="{...}" />
-            <marker date="1541611723500" expanded="true" signature="3611:4982" ph="{...}" />
-            <marker date="1541611723500" expanded="true" signature="3650:3979" ph="{...}" />
-            <marker date="1541611723500" expanded="true" signature="3680:3753" ph="{...}" />
-            <marker date="1541611723500" expanded="true" signature="3984:4226" ph="{...}" />
-            <marker date="1541611723500" expanded="true" signature="4146:4221" ph="{...}" />
-            <marker date="1541611723500" expanded="true" signature="4750:4800" ph="{...}" />
-            <marker date="1541611723500" expanded="true" signature="4928:4978" ph="{...}" />
-            <marker date="1541611723500" expanded="true" signature="5042:5444" ph="{...}" />
-            <marker date="1541611723500" expanded="true" signature="5257:5440" ph="{...}" />
-            <marker date="1541611723500" expanded="true" signature="5488:5843" ph="{...}" />
-            <marker date="1541611723500" expanded="true" signature="5547:5840" ph="{...}" />
-            <marker date="1541611723500" expanded="true" signature="5555:5749" ph="/* walkParticleSpawn.transform.position = this.transform.position + (new Vector3(0.0f, PS_spawnToFeetOffsetY, 0.0 ... */" />
-            <marker date="1541611723500" expanded="true" signature="5865:6137" ph="{...}" />
+            <marker date="1543785350182" expanded="false" signature="6:77" ph="..." />
+            <marker date="1543785350182" expanded="true" signature="129:6908" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="2407:2470" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="2494:2736" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="2794:2999" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="2837:2996" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="3028:4268" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="3575:3842" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="3630:3838" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="3713:3832" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="3924:4039" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="4147:4265" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="4324:6187" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="4404:4629" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="4596:4625" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="4733:5959" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="4772:5101" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="4802:4875" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="5106:5348" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="5268:5343" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="5783:5805" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="5933:5955" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="6055:6184" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="6191:6317" ph="/// Spawn Particle to the Feet depending if Jumping or landing ... " />
+            <marker date="1543785350182" expanded="true" signature="6356:6658" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="6371:6411" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="6469:6655" ph="{...}" />
+            <marker date="1543785350182" expanded="true" signature="6661:6747" ph="/// // Switch the way the player is labelled as facing. ... " />
+            <marker date="1543785350182" expanded="true" signature="6768:6906" ph="{...}" />
           </folding>
         </state>
       </provider>

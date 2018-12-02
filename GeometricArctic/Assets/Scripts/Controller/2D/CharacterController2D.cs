@@ -15,7 +15,7 @@ public class CharacterController2D : MonoBehaviour
 	[SerializeField] private Collider2D m_CrouchDisableCollider;				// A collider that will be disabled when crouching
 
 
-	const float k_GroundedRadius = 0.2f; // Radius of the overlap circle to determine if grounded
+	const float k_GroundedRadius = 0.3f; // Radius of the overlap circle to determine if grounded
 	private bool m_Grounded;            // Whether or not the player is grounded.
 	const float k_CeilingRadius = 0.2f; // Radius of the overlap circle to determine if the player can stand up
 	private Rigidbody2D m_Rigidbody2D;
@@ -30,8 +30,6 @@ public class CharacterController2D : MonoBehaviour
 	//Move Particle
 	//[SerializeField] private ParticleSystem walkParticleSpawn;
 
-
-	
 
 	[Header("Events")]
 	[Space]
