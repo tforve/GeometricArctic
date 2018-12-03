@@ -1,43 +1,71 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ShapeshiftController : MonoBehaviour {
 
 	//What have to change
-	private Animator animator;										// have to change the Animator to the correct one for every Shape
-	private SpriteRenderer spriteRenderer;
-
-	private CharacterController3D controller3D;						// used to change CharacterControll related values
-	private PlayerMovement playerMovement;							// relevant for Inputs and to change runSpeed
-	private Health resource;
+	private Animator animator;												// have to change the Animator to the correct one for every Shape
+	private CharacterController3D controller3D;								// used to change CharacterControll related values
+	private PlayerMovement playerMovement;									// relevant for Inputs and to change runSpeed
+	private Health 	resource;
+	
+	//Particle system for Shapeshifteffect
+	[SerializeField] private ParticleSystem shapeShiftParticleSystem;		// Particle System triggered when ShapeShift is activated
 
 	[Header("Human")]
-	[SerializeField] private Animator h_Animator;
-	[SerializeField] private BoxCollider h_BoxCollider;
-	[SerializeField] private CapsuleCollider h_CapsulCollider;
+	[SerializeField] private RuntimeAnimatorController 	h_Animation;
+	[SerializeField] private BoxCollider 				h_BoxCollider;
+	[SerializeField] private CapsuleCollider 			h_CapsulCollider;
 	[Header("Fox")]
-	[SerializeField] private Animator f_Animator;
-	[SerializeField] private BoxCollider f_BoxCollider;
-	[SerializeField] private CapsuleCollider f_CapsulCollider;
+	[SerializeField] private RuntimeAnimatorController 	f_Animation;
+	[SerializeField] private BoxCollider 				f_BoxCollider;
+	[SerializeField] private CapsuleCollider 			f_CapsulCollider;
+	[Header("Owl")]
+	[SerializeField] private RuntimeAnimatorController 	o_Animation;
+	[SerializeField] private BoxCollider 				o_BoxCollider;
+	[SerializeField] private CapsuleCollider 			o_CapsulCollider;
+	[Header("Seal")]
+	[SerializeField] private RuntimeAnimatorController 	s_Animation;
+	[SerializeField] private BoxCollider				s_BoxCollider;
+	[SerializeField] private CapsuleCollider 			s_CapsulCollider;
 
-	private List<Collider> oldColliders;							// List of all active Colliders
+	private List<Collider> oldColliders = new List<Collider>();				// List of all active Colliders
+	
+	// --------------------------------------------
+	
+	void Awake()
+	{
+		HandleColliders();
+		h_BoxCollider.enabled = true;
+		h_CapsulCollider.enabled = true;
+	}
 
 	void Start()
 	{
 		animator = GetComponent<Animator>();
-		spriteRenderer = GetComponent<SpriteRenderer>();
 		controller3D = GetComponent<CharacterController3D>();
 		playerMovement = GetComponent<PlayerMovement>();
 		resource = GetComponent<Health>();
 	}
 
-	///<summary> Update and Handles alle Colliders </summary>
+	/// <summary>
+	/// Switch active Colliders. Disable wrong Colliders, enables correct ones
+	/// </summary>
 	void HandleColliders()
 	{
-		//alle Collider durchlaufen und die jetzt AKTIVEN.enable = false setzen.
-		//oldColliders.Add(GetComponent<Collider>());
-		//Debug.Log(oldColliders.Count);
+		oldColliders.Clear();
+
+		foreach (Collider collider in GetComponentsInChildren<Collider>())
+		{
+			oldColliders.Add(collider);
+		}
+		
+		foreach (var collider in oldColliders)
+		{
+			collider.enabled = false;
+		}
 	}
 	
 	/// <summary>
@@ -52,52 +80,44 @@ public class ShapeshiftController : MonoBehaviour {
 		{
 			case Shapes.human:
 				// collider aktivieren
-
+				h_BoxCollider.enabled = true;
+				h_CapsulCollider.enabled = true;
 				// animator austauschen
-
+				animator.runtimeAnimatorController = h_Animation;
 				// evtl. controlls austauschen
 
 				// movespeed, jumpForce etc. anpassen
 				controller3D.MyJumpforce = 15;
 				playerMovement.MyRunSpeed = 7;
+				// ressource Cost for Shapeshift
 				resource.Hit(1);
 				break;
 
 			case Shapes.fox:
-				// collider aktivieren
-
-				// animator austauschen
-
-				// evtl. controlls austauschen
-
-				// movespeed, jumpForce etc. anpassen
+				f_BoxCollider.enabled = true;
+				f_CapsulCollider.enabled = true;
+				animator.runtimeAnimatorController = f_Animation;
 				controller3D.MyJumpforce = 15;
 				playerMovement.MyRunSpeed = 10;
 				resource.Hit(1);
 				break;
 
 			case Shapes.owl:
-				// collider aktivieren
-
-				// animator austauschen
-
-				// evtl. controlls austauschen
-
-				// movespeed, jumpForce etc. anpassen
+				o_BoxCollider.enabled = true;
+				o_CapsulCollider.enabled = true;
+				animator.runtimeAnimatorController = o_Animation;
 				controller3D.MyJumpforce = 0;
 				playerMovement.MyRunSpeed = 8;
+				resource.Hit(1);
 				break;
 
-			case Shapes.robbe:
-				// collider aktivieren
-
-				// animator austauschen
-
-				// evtl. controlls austauschen
-
-				// movespeed, jumpForce etc. anpassen
+			case Shapes.seal:
+				s_BoxCollider.enabled = true;
+				s_CapsulCollider.enabled = true;
+				animator.runtimeAnimatorController = s_Animation;
 				controller3D.MyJumpforce = 3;
 				playerMovement.MyRunSpeed = 5;
+				resource.Hit(1);
 				break;
 		}
 		
