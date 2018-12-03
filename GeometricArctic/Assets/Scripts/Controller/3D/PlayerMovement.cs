@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Experimental.UIElements;
 
 //Forms the Player can switch to 
-public enum Shapes {human, fox, owl, robbe};
+public enum Shapes {human, fox, owl, seal};
 
 [RequireComponent(typeof(CharacterController3D))]
 public class PlayerMovement : MonoBehaviour
@@ -66,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
 		{
 			shapeshiftController.SwitchShape(Shapes.fox);
 		}
+		
 	}
 
 	public void OnCrouching(bool isCrouching)

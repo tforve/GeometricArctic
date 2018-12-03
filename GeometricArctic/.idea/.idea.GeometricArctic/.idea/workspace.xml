@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03d24173-8b80-4ff6-ad79-a85379e9c5f7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GeometricArctic/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeometricArctic/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GeometricArctic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeometricArctic/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Fox/Player.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Fox/Player.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player3D.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player3D.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level00.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level00.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/3D/CharacterController3D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/3D/CharacterController3D.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/3D/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/3D/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/ShapeshiftController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/ShapeshiftController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +27,8 @@
           <entry key="project.open.time.34" value="3" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.37" value="1" />
-          <entry key="project.open.time.39" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.open.time.39" value="2" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -42,12 +43,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="4101" />
+          <entry key="cs" value="5283" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="4101" />
+          <entry key="C#" value="5283" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -93,13 +94,28 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/3D/PlayerMovement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="-438">
+              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+              <folding>
+                <marker date="1543849992541" expanded="false" signature="6:161" ph="..." />
+                <marker date="1543849992541" expanded="true" signature="335:1876" ph="{...}" />
+                <marker date="1543849992541" expanded="true" signature="669:724" ph="{...}" />
+                <marker date="1543849992541" expanded="true" signature="740:863" ph="{...}" />
+                <marker date="1543849992541" expanded="true" signature="917:1539" ph="{...}" />
+                <marker date="1543849992541" expanded="true" signature="1098:1203" ph="{...}" />
+                <marker date="1543849992541" expanded="true" signature="1241:1267" ph="{...}" />
+                <marker date="1543849992541" expanded="true" signature="1307:1334" ph="{...}" />
+                <marker date="1543849992541" expanded="true" signature="1377:1436" ph="{...}" />
+                <marker date="1543849992541" expanded="true" signature="1476:1533" ph="{...}" />
+                <marker date="1543849992541" expanded="true" signature="1583:1637" ph="{...}" />
+                <marker date="1543849992541" expanded="true" signature="1663:1749" ph="{...}" />
+                <marker date="1543849992541" expanded="true" signature="1778:1871" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/3D/CharacterController3D.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -142,30 +158,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Health.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="765">
               <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/ShapeshiftController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state relative-caret-position="480">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
               <folding>
-                <marker date="1543785176345" expanded="false" signature="6:78" ph="..." />
-                <marker date="1543785176345" expanded="true" signature="130:2657" ph="{...}" />
-                <marker date="1543785176345" expanded="true" signature="967:1207" ph="{...}" />
-                <marker date="1543785176345" expanded="true" signature="1291:1455" ph="{...}" />
-                <marker date="1543785176345" expanded="true" signature="1297:1452" ph="/* alle Collider durchlaufen und die jetzt AKTIVEN.enable = false setzen. ... */" />
-                <marker date="1543785176345" expanded="true" signature="1459:1564" ph="/// Handle the complete Shapeshifting.  ... " />
-                <marker date="1543785176345" expanded="true" signature="1604:2653" ph="{...}" />
-                <marker date="1543785176345" expanded="true" signature="1647:2647" ph="{...}" />
-                <marker date="1543785176345" expanded="true" signature="1678:1808" ph="/* collider aktivieren ... */" />
-                <marker date="1543785176345" expanded="true" signature="1936:2066" ph="/* collider aktivieren ... */" />
-                <marker date="1543785176345" expanded="true" signature="2195:2325" ph="/* collider aktivieren ... */" />
-                <marker date="1543785176345" expanded="true" signature="2433:2563" ph="/* collider aktivieren ... */" />
+                <marker date="1543854095787" expanded="true" signature="6:97" ph="..." />
+                <marker date="1543854095787" expanded="true" signature="149:3673" ph="{...}" />
+                <marker date="1543854095787" expanded="true" signature="1650:1744" ph="{...}" />
+                <marker date="1543854095787" expanded="true" signature="1759:1948" ph="{...}" />
+                <marker date="1543854095787" expanded="true" signature="1951:2056" ph="/// Switch active Colliders. Disable wrong Colliders, enables correct ones ... " />
+                <marker date="1543854095787" expanded="true" signature="2080:2300" ph="{...}" />
+                <marker date="1543854095787" expanded="true" signature="2177:2216" ph="{...}" />
+                <marker date="1543854095787" expanded="true" signature="2260:2297" ph="{...}" />
+                <marker date="1543854095787" expanded="true" signature="2304:2409" ph="/// Handle the complete Shapeshifting.  ... " />
+                <marker date="1543854095787" expanded="true" signature="2449:3669" ph="{...}" />
+                <marker date="1543854095787" expanded="true" signature="2492:3663" ph="{...}" />
+                <marker date="1543854095787" expanded="true" signature="2703:2776" ph="/* evtl. controlls austauschen ... */" />
               </folding>
             </state>
           </provider>
@@ -202,11 +218,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/3D/OLD/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/3D/OLD/CharacterController3D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/2D/CharacterController2D.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/3D/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Particle Systems/DashImproved.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/ShapeshiftController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/3D/CharacterController3D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/3D/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/ShapeshiftController.cs" />
       </list>
     </option>
   </component>
@@ -228,6 +244,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
       <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <subPane>
@@ -265,9 +284,6 @@
           <select />
         </subPane>
         <option name="show-hidden-items" value="false" />
-      </pane>
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
       </pane>
     </panes>
   </component>
@@ -327,11 +343,12 @@
       <workItem from="1542617172879" duration="9554000" />
       <workItem from="1542901294970" duration="21983000" />
       <workItem from="1543784611841" duration="757000" />
+      <workItem from="1543848468580" duration="5435000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84005000" />
+    <option name="totallyTimeSpent" value="89440000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -344,8 +361,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.141258" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14285715" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -456,44 +474,32 @@
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2F14D49E-DC70-4940-AEE5-57642343F344/0d/ebcdd451/Vector3.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Particle Systems/DashImproved.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Particle Systems/DashImproved.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Health.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="67" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="67" />
+        <state relative-caret-position="765">
+          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/3D/PlayerMovement.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Health.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/ShapeshiftController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="-438">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
           <folding>
-            <marker date="1543785176345" expanded="false" signature="6:78" ph="..." />
-            <marker date="1543785176345" expanded="true" signature="130:2657" ph="{...}" />
-            <marker date="1543785176345" expanded="true" signature="967:1207" ph="{...}" />
-            <marker date="1543785176345" expanded="true" signature="1291:1455" ph="{...}" />
-            <marker date="1543785176345" expanded="true" signature="1297:1452" ph="/* alle Collider durchlaufen und die jetzt AKTIVEN.enable = false setzen. ... */" />
-            <marker date="1543785176345" expanded="true" signature="1459:1564" ph="/// Handle the complete Shapeshifting.  ... " />
-            <marker date="1543785176345" expanded="true" signature="1604:2653" ph="{...}" />
-            <marker date="1543785176345" expanded="true" signature="1647:2647" ph="{...}" />
-            <marker date="1543785176345" expanded="true" signature="1678:1808" ph="/* collider aktivieren ... */" />
-            <marker date="1543785176345" expanded="true" signature="1936:2066" ph="/* collider aktivieren ... */" />
-            <marker date="1543785176345" expanded="true" signature="2195:2325" ph="/* collider aktivieren ... */" />
-            <marker date="1543785176345" expanded="true" signature="2433:2563" ph="/* collider aktivieren ... */" />
+            <marker date="1543849992541" expanded="false" signature="6:161" ph="..." />
+            <marker date="1543849992541" expanded="true" signature="335:1876" ph="{...}" />
+            <marker date="1543849992541" expanded="true" signature="669:724" ph="{...}" />
+            <marker date="1543849992541" expanded="true" signature="740:863" ph="{...}" />
+            <marker date="1543849992541" expanded="true" signature="917:1539" ph="{...}" />
+            <marker date="1543849992541" expanded="true" signature="1098:1203" ph="{...}" />
+            <marker date="1543849992541" expanded="true" signature="1241:1267" ph="{...}" />
+            <marker date="1543849992541" expanded="true" signature="1307:1334" ph="{...}" />
+            <marker date="1543849992541" expanded="true" signature="1377:1436" ph="{...}" />
+            <marker date="1543849992541" expanded="true" signature="1476:1533" ph="{...}" />
+            <marker date="1543849992541" expanded="true" signature="1583:1637" ph="{...}" />
+            <marker date="1543849992541" expanded="true" signature="1663:1749" ph="{...}" />
+            <marker date="1543849992541" expanded="true" signature="1778:1871" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -532,6 +538,27 @@
             <marker date="1543785350182" expanded="true" signature="6469:6655" ph="{...}" />
             <marker date="1543785350182" expanded="true" signature="6661:6747" ph="/// // Switch the way the player is labelled as facing. ... " />
             <marker date="1543785350182" expanded="true" signature="6768:6906" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/ShapeshiftController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <marker date="1543854095787" expanded="true" signature="6:97" ph="..." />
+            <marker date="1543854095787" expanded="true" signature="149:3673" ph="{...}" />
+            <marker date="1543854095787" expanded="true" signature="1650:1744" ph="{...}" />
+            <marker date="1543854095787" expanded="true" signature="1759:1948" ph="{...}" />
+            <marker date="1543854095787" expanded="true" signature="1951:2056" ph="/// Switch active Colliders. Disable wrong Colliders, enables correct ones ... " />
+            <marker date="1543854095787" expanded="true" signature="2080:2300" ph="{...}" />
+            <marker date="1543854095787" expanded="true" signature="2177:2216" ph="{...}" />
+            <marker date="1543854095787" expanded="true" signature="2260:2297" ph="{...}" />
+            <marker date="1543854095787" expanded="true" signature="2304:2409" ph="/// Handle the complete Shapeshifting.  ... " />
+            <marker date="1543854095787" expanded="true" signature="2449:3669" ph="{...}" />
+            <marker date="1543854095787" expanded="true" signature="2492:3663" ph="{...}" />
+            <marker date="1543854095787" expanded="true" signature="2703:2776" ph="/* evtl. controlls austauschen ... */" />
           </folding>
         </state>
       </provider>
