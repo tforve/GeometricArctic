@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03d24173-8b80-4ff6-ad79-a85379e9c5f7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GeometricArctic/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeometricArctic/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GeometricArctic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeometricArctic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level00.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level00.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
-    </list>
+    <list default="true" id="03d24173-8b80-4ff6-ad79-a85379e9c5f7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +12,7 @@
     <session id="-244349369">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.33" value="1" />
@@ -166,7 +160,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/ShapeshiftController.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="26" column="70" lean-forward="true" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
+              <caret line="26" column="70" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
               <folding>
                 <marker date="1543854095787" expanded="true" signature="6:97" ph="..." />
                 <marker date="1543854095787" expanded="true" signature="149:3673" ph="{...}" />
@@ -197,7 +191,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/2D/PlayerMovement2D.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/2D/CharacterController2D.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/3D/CharacterController3D.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Angie Sprite/Scripts/ButtonNextAnim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/3D/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -231,7 +224,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-55" />
     <option name="y" value="-10" />
     <option name="width" value="1400" />
@@ -342,12 +335,12 @@
       <workItem from="1542617172879" duration="9554000" />
       <workItem from="1542901294970" duration="21983000" />
       <workItem from="1543784611841" duration="757000" />
-      <workItem from="1543848468580" duration="6196000" />
+      <workItem from="1543848468580" duration="6505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90201000" />
+    <option name="totallyTimeSpent" value="90510000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -359,8 +352,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14285715" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -545,29 +537,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="95" selection-start-line="95" selection-end-line="95" />
-          <folding>
-            <marker date="1484074297000" expanded="true" signature="1:622" ph="/* Produced by App Advisory - http://app-advisory.com ... */" />
-            <marker date="1484074297000" expanded="false" signature="633:741" ph="..." />
-            <marker date="1484074297000" expanded="true" signature="776:2656" ph="{...}" />
-            <marker date="1484074297000" expanded="true" signature="824:2654" ph="{...}" />
-            <marker date="1484074297000" expanded="true" signature="978:1049" ph="{...}" />
-            <marker date="1484074297000" expanded="true" signature="1072:1120" ph="{...}" />
-            <marker date="1484074297000" expanded="true" signature="1152:2270" ph="{...}" />
-            <marker date="1484074297000" expanded="true" signature="1187:2183" ph="{...}" />
-            <marker date="1484074297000" expanded="true" signature="1468:1566" ph="/* case 3: ... */" />
-            <marker date="1484074297000" expanded="true" signature="1662:1867" ph="/* case 5: ... */" />
-            <marker date="1484074297000" expanded="true" signature="2292:2360" ph="{...}" />
-            <marker date="1484074297000" expanded="true" signature="2382:2450" ph="{...}" />
-            <marker date="1484074297000" expanded="true" signature="2481:2528" ph="{...}" />
-            <marker date="1484074297000" expanded="true" signature="2564:2651" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/ShapeshiftController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="26" column="70" lean-forward="true" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
+          <caret line="26" column="70" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
           <folding>
             <marker date="1543854095787" expanded="true" signature="6:97" ph="..." />
             <marker date="1543854095787" expanded="true" signature="149:3673" ph="{...}" />
