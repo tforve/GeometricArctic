@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class ShapeshiftController : MonoBehaviour {
 
@@ -14,18 +15,18 @@ public class ShapeshiftController : MonoBehaviour {
 	//Particle system for Shapeshifteffect
 	[SerializeField] private ParticleSystem shapeShiftParticleSystem;		// Particle System triggered when ShapeShift is activated
 
-	[Header("Human")]
-	[SerializeField] private RuntimeAnimatorController 	h_Animation;
-	[SerializeField] private BoxCollider 				h_BoxCollider;
-	[SerializeField] private CapsuleCollider 			h_CapsulCollider;
+	[Header("Girl")]
+	[SerializeField] private RuntimeAnimatorController 	g_Animation;
+	[SerializeField] private BoxCollider 				g_BoxCollider;
+	[SerializeField] private CapsuleCollider 			g_CapsulCollider;
 	[Header("Fox")]
 	[SerializeField] private RuntimeAnimatorController 	f_Animation;
 	[SerializeField] private BoxCollider 				f_BoxCollider;
 	[SerializeField] private CapsuleCollider 			f_CapsulCollider;
-	[Header("Owl")]
-	[SerializeField] private RuntimeAnimatorController 	o_Animation;
-	[SerializeField] private BoxCollider 				o_BoxCollider;
-	[SerializeField] private CapsuleCollider 			o_CapsulCollider;
+	[Header("Bear")]
+	[SerializeField] private RuntimeAnimatorController 	b_Animation;
+	[SerializeField] private BoxCollider 				b_BoxCollider;
+	[SerializeField] private CapsuleCollider 			b_CapsulCollider;
 	[Header("Seal")]
 	[SerializeField] private RuntimeAnimatorController 	s_Animation;
 	[SerializeField] private BoxCollider				s_BoxCollider;
@@ -38,8 +39,8 @@ public class ShapeshiftController : MonoBehaviour {
 	void Awake()
 	{
 		HandleColliders();
-		h_BoxCollider.enabled = true;
-		h_CapsulCollider.enabled = true;
+		g_BoxCollider.enabled = true;
+		g_CapsulCollider.enabled = true;
 	}
 
 	void Start()
@@ -80,10 +81,10 @@ public class ShapeshiftController : MonoBehaviour {
 		{
 			case Shapes.human:
 				// collider aktivieren
-				h_BoxCollider.enabled = true;
-				h_CapsulCollider.enabled = true;
+				g_BoxCollider.enabled = true;
+				g_CapsulCollider.enabled = true;
 				// animator austauschen
-				animator.runtimeAnimatorController = h_Animation;
+				animator.runtimeAnimatorController = g_Animation;
 				// evtl. controlls austauschen
 
 				// movespeed, jumpForce etc. anpassen
@@ -103,9 +104,9 @@ public class ShapeshiftController : MonoBehaviour {
 				break;
 
 			case Shapes.owl:
-				o_BoxCollider.enabled = true;
-				o_CapsulCollider.enabled = true;
-				animator.runtimeAnimatorController = o_Animation;
+				b_BoxCollider.enabled = true;
+				b_CapsulCollider.enabled = true;
+				animator.runtimeAnimatorController = b_Animation;
 				controller3D.MyJumpforce = 0;
 				playerMovement.MyRunSpeed = 8;
 				resource.Hit(1);

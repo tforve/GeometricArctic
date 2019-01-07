@@ -67,6 +67,12 @@ public class PlayerMovement : MonoBehaviour
 			shapeshiftController.SwitchShape(Shapes.fox);
 		}
 		
+		//Delete later
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			Application.Quit();
+		}
+
 	}
 
 	public void OnCrouching(bool isCrouching)

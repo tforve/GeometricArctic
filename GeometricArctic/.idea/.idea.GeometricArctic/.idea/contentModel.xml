@@ -9,20 +9,6 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Angie Sprite" t="Include">
-          <e p="Editor" t="Include">
-            <e p="Autorun.cs" t="Include" />
-            <e p="DGChecker.cs" t="Include" />
-            <e p="Welcome.cs" t="Include" />
-          </e>
-          <e p="EditorScripts" t="Include">
-            <e p="OpenMoreGames.cs" t="Include" />
-          </e>
-          <e p="Scripts" t="Include">
-            <e p="ButtonNextAnim.cs" t="Include" />
-            <e p="Enums.cs" t="Include" />
-          </e>
-        </e>
         <e p="Editor" t="Include">
           <e p="ExportTerrain.cs" t="Include" />
         </e>
