@@ -68,7 +68,14 @@ public class ShapeshiftController : MonoBehaviour {
 			collider.enabled = false;
 		}
 	}
-	
+
+	void StartShapeshiftEffect()
+	{
+		// need to use desolver
+		
+		// maybe coroutine
+	}
+
 	/// <summary>
 	/// Handle the complete Shapeshifting. 
 	/// </summary>
@@ -76,6 +83,7 @@ public class ShapeshiftController : MonoBehaviour {
 	public void SwitchShape(Shapes shapes)
 	{
 		HandleColliders();
+		StartShapeshiftEffect();
 
 		switch (shapes)
 		{
