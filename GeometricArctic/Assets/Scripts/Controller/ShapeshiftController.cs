@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.Collections;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -14,15 +15,19 @@ public class ShapeshiftController : MonoBehaviour {
 	
 	//Particle system for Shapeshifteffect
 	[SerializeField] private ParticleSystem shapeShiftParticleSystem;		// Particle System triggered when ShapeShift is activated
-
+	[SerializeField] private Material shapeShiftMaterial;					// Texture to change fo current form of player
+	[SerializeField] private float shapeShiftTime = 0.5f;
+	
 	[Header("Girl")]
 	[SerializeField] private RuntimeAnimatorController 	g_Animation;
 	[SerializeField] private BoxCollider 				g_BoxCollider;
 	[SerializeField] private CapsuleCollider 			g_CapsulCollider;
+	[SerializeField] private Material 					g_Material;
 	[Header("Fox")]
 	[SerializeField] private RuntimeAnimatorController 	f_Animation;
 	[SerializeField] private BoxCollider 				f_BoxCollider;
 	[SerializeField] private CapsuleCollider 			f_CapsulCollider;
+	[SerializeField] private Material 					f_Material;
 	[Header("Bear")]
 	[SerializeField] private RuntimeAnimatorController 	b_Animation;
 	[SerializeField] private BoxCollider 				b_BoxCollider;
@@ -33,7 +38,8 @@ public class ShapeshiftController : MonoBehaviour {
 	[SerializeField] private CapsuleCollider 			s_CapsulCollider;
 
 	private List<Collider> oldColliders = new List<Collider>();				// List of all active Colliders
-	
+	private SpriteRenderer spriteRenderer;
+
 	// --------------------------------------------
 	
 	void Awake()
@@ -45,6 +51,7 @@ public class ShapeshiftController : MonoBehaviour {
 
 	void Start()
 	{
+		spriteRenderer = GetComponent<SpriteRenderer>();
 		animator = GetComponent<Animator>();
 		controller3D = GetComponent<CharacterController3D>();
 		playerMovement = GetComponent<PlayerMovement>();
@@ -71,9 +78,34 @@ public class ShapeshiftController : MonoBehaviour {
 
 	void StartShapeshiftEffect()
 	{
-		// need to use desolver
+		//change Shape to current Playerform
 		
-		// maybe coroutine
+		// change position to actual Player.transform.position
+		shapeShiftParticleSystem.transform.position = this.transform.position;
+		//flip direction same as Player
+
+		// Play() effect
+		shapeShiftParticleSystem.Play();
+		
+		//deactiave sprite of player
+		StartCoroutine(ShapeShiftTime(shapeShiftTime));
+		
+		// start External Force
+
+	}
+	
+	
+	private IEnumerator ShapeShiftTime(float shapeShiftTime)
+	{
+		Color tmp = spriteRenderer.color;
+		tmp.a = 0.0f;
+		spriteRenderer.color = tmp;
+		
+		yield return new WaitForSeconds(shapeShiftTime);
+		
+		Color tmp2 = spriteRenderer.color;
+		tmp2.a = 255.0f;
+		spriteRenderer.color = tmp2;
 	}
 
 	/// <summary>
@@ -83,6 +115,9 @@ public class ShapeshiftController : MonoBehaviour {
 	public void SwitchShape(Shapes shapes)
 	{
 		HandleColliders();
+		//change ShapeshiftForm to actual Form
+		
+		//start effect
 		StartShapeshiftEffect();
 
 		switch (shapes)
