@@ -2,15 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03d24173-8b80-4ff6-ad79-a85379e9c5f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GeometricArctic/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GeometricArctic/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeometricArctic/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GeometricArctic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeometricArctic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GeometricArctic/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeometricArctic/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Desolver/IDontFeelSoGood.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Desolver/IDontFeelSoGood.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ShaderTestingRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ShaderTestingRoom.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player3D.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player3D.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Particle Systems/PS_IDontFeelSoGood.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Particle Systems/PS_IDontFeelSoGood.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/ShapeshiftController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/ShapeshiftController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Crouch/Crouch00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Crouch/Crouch00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Crouch/Crouch01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Crouch/Crouch01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Jump/Jump00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Jump/Jump00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Jump/Jump01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Jump/Jump01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Jump/Jump02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Jump/Jump02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Land/Land00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Land/Land00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Land/Land01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Land/Land01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Run/Run00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Run/Run00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Run/Run01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Run/Run01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Run/Run02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Run/Run02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Run/Run03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Run/Run03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Run/Run04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Run/Run04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Idle/Idle00_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Idle/Idle00_colored.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Idle/Idle01_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Idle/Idle01_colored.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Idle/Idle02_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Idle/Idle02_colored.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Idle/Idle03_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Idle/Idle03_colored.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Idle/Idle04_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Idle/Idle04_colored.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Jump/Jump00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Jump/Jump00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Jump/Jump01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Jump/Jump01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Jump/Jump02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Jump/Jump02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Land/Jump03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Land/Jump03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Land/Jump03_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Land/Jump03_01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run00_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run00_colored.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run01_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run01_colored.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run02_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run02_colored.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run03_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run03_colored.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run04_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run04_colored.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run05_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run05_colored.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run06_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run06_colored.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run07_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run07_colored.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run08_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run08_colored.png.meta" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -143,26 +172,27 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/ShapeshiftController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
+            <state relative-caret-position="511">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
               <folding>
-                <marker date="1547231260006" expanded="false" signature="6:155" ph="..." />
-                <marker date="1547231260006" expanded="true" signature="207:4880" ph="{...}" />
-                <marker date="1547231260006" expanded="true" signature="2013:2107" ph="{...}" />
-                <marker date="1547231260006" expanded="true" signature="2122:2362" ph="{...}" />
-                <marker date="1547231260006" expanded="true" signature="2365:2470" ph="/// Switch active Colliders. Disable wrong Colliders, enables correct ones ... " />
-                <marker date="1547231260006" expanded="true" signature="2494:2714" ph="{...}" />
-                <marker date="1547231260006" expanded="true" signature="2591:2630" ph="{...}" />
-                <marker date="1547231260006" expanded="true" signature="2674:2711" ph="{...}" />
-                <marker date="1547231260006" expanded="true" signature="2745:3126" ph="{...}" />
-                <marker date="1547231260006" expanded="true" signature="2751:2847" ph="/* change Shape to actual Playerform ... */" />
-                <marker date="1547231260006" expanded="true" signature="2923:2974" ph="/* Play() effect ... */" />
-                <marker date="1547231260006" expanded="true" signature="3188:3420" ph="{...}" />
-                <marker date="1547231260006" expanded="true" signature="3423:3528" ph="/// Handle the complete Shapeshifting.  ... " />
-                <marker date="1547231260006" expanded="true" signature="3568:4876" ph="{...}" />
-                <marker date="1547231260006" expanded="true" signature="3595:3653" ph="/* change ShapeshiftForm to actual Form ... */" />
-                <marker date="1547231260006" expanded="true" signature="3699:4870" ph="{...}" />
-                <marker date="1547231260006" expanded="true" signature="3910:3983" ph="/* evtl. controlls austauschen ... */" />
+                <marker date="1547368419022" expanded="false" signature="6:155" ph="..." />
+                <marker date="1547368419022" expanded="true" signature="229:5072" ph="{...}" />
+                <marker date="1547368419022" expanded="true" signature="1867:1961" ph="{...}" />
+                <marker date="1547368419022" expanded="true" signature="1976:2341" ph="{...}" />
+                <marker date="1547368419022" expanded="true" signature="2344:2449" ph="/// Switch active Colliders. Disable wrong Colliders, enables correct ones ... " />
+                <marker date="1547368419022" expanded="true" signature="2473:2693" ph="{...}" />
+                <marker date="1547368419022" expanded="true" signature="2570:2609" ph="{...}" />
+                <marker date="1547368419022" expanded="true" signature="2653:2690" ph="{...}" />
+                <marker date="1547368419022" expanded="true" signature="2724:3318" ph="{...}" />
+                <marker date="1547368419022" expanded="true" signature="2805:2979" ph="{...}" />
+                <marker date="1547368419022" expanded="true" signature="2862:2971" ph="{...}" />
+                <marker date="1547368419022" expanded="true" signature="3115:3166" ph="/* Play() effect ... */" />
+                <marker date="1547368419022" expanded="true" signature="3380:3612" ph="{...}" />
+                <marker date="1547368419022" expanded="true" signature="3615:3720" ph="/// Handle the complete Shapeshifting.  ... " />
+                <marker date="1547368419022" expanded="true" signature="3760:5068" ph="{...}" />
+                <marker date="1547368419022" expanded="true" signature="3787:3845" ph="/* change ShapeshiftForm to actual Form ... */" />
+                <marker date="1547368419022" expanded="true" signature="3891:5062" ph="{...}" />
+                <marker date="1547368419022" expanded="true" signature="4102:4175" ph="/* evtl. controlls austauschen ... */" />
               </folding>
             </state>
           </provider>
@@ -333,12 +363,12 @@
       <workItem from="1544284827475" duration="585000" />
       <workItem from="1546986673505" duration="1406000" />
       <workItem from="1547216782279" duration="276000" />
-      <workItem from="1547228058360" duration="3201000" />
+      <workItem from="1547228058360" duration="6723000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95978000" />
+    <option name="totallyTimeSpent" value="99500000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -585,26 +615,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/ShapeshiftController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
+        <state relative-caret-position="511">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
           <folding>
-            <marker date="1547231260006" expanded="false" signature="6:155" ph="..." />
-            <marker date="1547231260006" expanded="true" signature="207:4880" ph="{...}" />
-            <marker date="1547231260006" expanded="true" signature="2013:2107" ph="{...}" />
-            <marker date="1547231260006" expanded="true" signature="2122:2362" ph="{...}" />
-            <marker date="1547231260006" expanded="true" signature="2365:2470" ph="/// Switch active Colliders. Disable wrong Colliders, enables correct ones ... " />
-            <marker date="1547231260006" expanded="true" signature="2494:2714" ph="{...}" />
-            <marker date="1547231260006" expanded="true" signature="2591:2630" ph="{...}" />
-            <marker date="1547231260006" expanded="true" signature="2674:2711" ph="{...}" />
-            <marker date="1547231260006" expanded="true" signature="2745:3126" ph="{...}" />
-            <marker date="1547231260006" expanded="true" signature="2751:2847" ph="/* change Shape to actual Playerform ... */" />
-            <marker date="1547231260006" expanded="true" signature="2923:2974" ph="/* Play() effect ... */" />
-            <marker date="1547231260006" expanded="true" signature="3188:3420" ph="{...}" />
-            <marker date="1547231260006" expanded="true" signature="3423:3528" ph="/// Handle the complete Shapeshifting.  ... " />
-            <marker date="1547231260006" expanded="true" signature="3568:4876" ph="{...}" />
-            <marker date="1547231260006" expanded="true" signature="3595:3653" ph="/* change ShapeshiftForm to actual Form ... */" />
-            <marker date="1547231260006" expanded="true" signature="3699:4870" ph="{...}" />
-            <marker date="1547231260006" expanded="true" signature="3910:3983" ph="/* evtl. controlls austauschen ... */" />
+            <marker date="1547368419022" expanded="false" signature="6:155" ph="..." />
+            <marker date="1547368419022" expanded="true" signature="229:5072" ph="{...}" />
+            <marker date="1547368419022" expanded="true" signature="1867:1961" ph="{...}" />
+            <marker date="1547368419022" expanded="true" signature="1976:2341" ph="{...}" />
+            <marker date="1547368419022" expanded="true" signature="2344:2449" ph="/// Switch active Colliders. Disable wrong Colliders, enables correct ones ... " />
+            <marker date="1547368419022" expanded="true" signature="2473:2693" ph="{...}" />
+            <marker date="1547368419022" expanded="true" signature="2570:2609" ph="{...}" />
+            <marker date="1547368419022" expanded="true" signature="2653:2690" ph="{...}" />
+            <marker date="1547368419022" expanded="true" signature="2724:3318" ph="{...}" />
+            <marker date="1547368419022" expanded="true" signature="2805:2979" ph="{...}" />
+            <marker date="1547368419022" expanded="true" signature="2862:2971" ph="{...}" />
+            <marker date="1547368419022" expanded="true" signature="3115:3166" ph="/* Play() effect ... */" />
+            <marker date="1547368419022" expanded="true" signature="3380:3612" ph="{...}" />
+            <marker date="1547368419022" expanded="true" signature="3615:3720" ph="/// Handle the complete Shapeshifting.  ... " />
+            <marker date="1547368419022" expanded="true" signature="3760:5068" ph="{...}" />
+            <marker date="1547368419022" expanded="true" signature="3787:3845" ph="/* change ShapeshiftForm to actual Form ... */" />
+            <marker date="1547368419022" expanded="true" signature="3891:5062" ph="{...}" />
+            <marker date="1547368419022" expanded="true" signature="4102:4175" ph="/* evtl. controlls austauschen ... */" />
           </folding>
         </state>
       </provider>

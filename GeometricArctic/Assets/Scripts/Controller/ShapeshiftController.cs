@@ -4,6 +4,7 @@ using System.Linq;
 using Unity.Collections;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class ShapeshiftController : MonoBehaviour {
 
@@ -14,20 +15,18 @@ public class ShapeshiftController : MonoBehaviour {
 	private Health 	resource;
 	
 	//Particle system for Shapeshifteffect
-	[SerializeField] private ParticleSystem shapeShiftParticleSystem;		// Particle System triggered when ShapeShift is activated
-	[SerializeField] private Material shapeShiftMaterial;					// Texture to change fo current form of player
+	[SerializeField] private ParticleSystem shapeShiftParticleSystem;
+	private ParticleSystem[] shapeShiftPsList;// Particle System triggered when ShapeShift is activated
 	[SerializeField] private float shapeShiftTime = 0.5f;
 	
 	[Header("Girl")]
 	[SerializeField] private RuntimeAnimatorController 	g_Animation;
 	[SerializeField] private BoxCollider 				g_BoxCollider;
 	[SerializeField] private CapsuleCollider 			g_CapsulCollider;
-	[SerializeField] private Material 					g_Material;
 	[Header("Fox")]
 	[SerializeField] private RuntimeAnimatorController 	f_Animation;
 	[SerializeField] private BoxCollider 				f_BoxCollider;
 	[SerializeField] private CapsuleCollider 			f_CapsulCollider;
-	[SerializeField] private Material 					f_Material;
 	[Header("Bear")]
 	[SerializeField] private RuntimeAnimatorController 	b_Animation;
 	[SerializeField] private BoxCollider 				b_BoxCollider;
@@ -56,6 +55,10 @@ public class ShapeshiftController : MonoBehaviour {
 		controller3D = GetComponent<CharacterController3D>();
 		playerMovement = GetComponent<PlayerMovement>();
 		resource = GetComponent<Health>();
+		
+		//particle ShapeShift stuff
+		shapeShiftPsList = shapeShiftParticleSystem.GetComponentsInChildren<ParticleSystem>();
+		
 	}
 
 	/// <summary>
@@ -79,6 +82,15 @@ public class ShapeshiftController : MonoBehaviour {
 	void StartShapeshiftEffect()
 	{
 		//change Shape to current Playerform
+		if (shapeShiftPsList.Length != null)
+		{
+			for (int i = 0; i < shapeShiftPsList.Length; i++)
+			{
+				var shape = shapeShiftPsList[i].shape;
+				shape.texture = this.spriteRenderer.sprite.texture;
+			}
+			
+		}
 		
 		// change position to actual Player.transform.position
 		shapeShiftParticleSystem.transform.position = this.transform.position;
