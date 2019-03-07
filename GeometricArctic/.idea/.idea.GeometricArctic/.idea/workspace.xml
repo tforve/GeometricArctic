@@ -1,46 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03d24173-8b80-4ff6-ad79-a85379e9c5f7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player3D.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player3D.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Particle Systems/PS_IDontFeelSoGood.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Particle Systems/PS_IDontFeelSoGood.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/ShapeshiftController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/ShapeshiftController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Crouch/Crouch00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Crouch/Crouch00.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Crouch/Crouch01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Crouch/Crouch01.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Jump/Jump00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Jump/Jump00.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Jump/Jump01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Jump/Jump01.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Jump/Jump02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Jump/Jump02.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Land/Land00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Land/Land00.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Land/Land01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Land/Land01.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Run/Run00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Run/Run00.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Run/Run01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Run/Run01.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Run/Run02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Run/Run02.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Run/Run03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Run/Run03.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Run/Run04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Run/Run04.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk00.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk01.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk02.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Fox/Walk/Walk03.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Idle/Idle00_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Idle/Idle00_colored.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Idle/Idle01_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Idle/Idle01_colored.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Idle/Idle02_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Idle/Idle02_colored.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Idle/Idle03_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Idle/Idle03_colored.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Idle/Idle04_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Idle/Idle04_colored.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Jump/Jump00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Jump/Jump00.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Jump/Jump01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Jump/Jump01.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Jump/Jump02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Jump/Jump02.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Land/Jump03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Land/Jump03.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Land/Jump03_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Land/Jump03_01.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run00_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run00_colored.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run01_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run01_colored.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run02_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run02_colored.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run03_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run03_colored.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run04_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run04_colored.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run05_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run05_colored.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run06_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run06_colored.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run07_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run07_colored.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run08_colored.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Girl/Run/Run08_colored.png.meta" afterDir="false" />
-    </list>
+    <list default="true" id="03d24173-8b80-4ff6-ad79-a85379e9c5f7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,8 +133,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/ShapeshiftController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="89" selection-start-line="89" selection-end-line="89" />
+            <state relative-caret-position="421">
+              <caret line="89" column="67" lean-forward="true" selection-start-line="89" selection-start-column="67" selection-end-line="89" selection-end-column="67" />
               <folding>
                 <marker date="1547368419022" expanded="false" signature="6:155" ph="..." />
                 <marker date="1547368419022" expanded="true" signature="229:5072" ph="{...}" />
@@ -363,12 +324,12 @@
       <workItem from="1544284827475" duration="585000" />
       <workItem from="1546986673505" duration="1406000" />
       <workItem from="1547216782279" duration="276000" />
-      <workItem from="1547228058360" duration="6723000" />
+      <workItem from="1547228058360" duration="7347000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99500000" />
+    <option name="totallyTimeSpent" value="100124000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -381,7 +342,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Capture Tool" />
@@ -615,8 +575,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Controller/ShapeshiftController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        <state relative-caret-position="421">
+          <caret line="89" column="67" lean-forward="true" selection-start-line="89" selection-start-column="67" selection-end-line="89" selection-end-column="67" />
           <folding>
             <marker date="1547368419022" expanded="false" signature="6:155" ph="..." />
             <marker date="1547368419022" expanded="true" signature="229:5072" ph="{...}" />
