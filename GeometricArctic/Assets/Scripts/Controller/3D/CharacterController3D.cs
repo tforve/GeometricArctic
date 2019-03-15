@@ -12,7 +12,7 @@ public class CharacterController3D : MonoBehaviour
 	[Header("Jumping")]
 	[SerializeField] private float 	m_JumpForce = 400f;								// Amount of force added when the player jumps.
 	[SerializeField] private bool 	m_AirControl = false;							// Whether or not a player can steer while jumping;
-	[SerializeField] private float	m_FallMultiplier = 2.5f;						// Adds extra Gravity to the Fall
+	[SerializeField] private float	m_FallMultiplier = 2.5f;							// Adds extra Gravity to the Fall
 	[SerializeField] private float 	m_LowJumpMultiplier = 2.0f;						// needed for Jumping higher by hold the Jump button
 	
 	[Header("Checkers")]
@@ -33,9 +33,6 @@ public class CharacterController3D : MonoBehaviour
 	private bool		m_FacingRight = true;  				// For determining which way the player is currently facing.
 	private Vector3		m_Velocity = Vector3.zero;
 
-	// Shapeshifting
-	private ShapeshiftController shapeshiftController;
-	
 	[Header("Events")][Space]
 	public UnityEvent	OnLandEvent;
 
@@ -56,7 +53,6 @@ public class CharacterController3D : MonoBehaviour
 	private void Awake()
 	{
 		m_Rigidbody = GetComponent<Rigidbody>();
-		shapeshiftController = GetComponent<ShapeshiftController>();
 
 		if (OnLandEvent == null)
 			OnLandEvent = new UnityEvent();
