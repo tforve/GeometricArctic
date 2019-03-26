@@ -20,6 +20,8 @@ public class PlayerMovement : MonoBehaviour
 
     // Shapeshifting
     private ShapeshiftController shapeshiftController;
+    //Interact
+    private Checkpoint checkpoint;
 
     public float MyRunSpeed
     {
@@ -57,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
         {
             crouch = false;
         }
-
+        //Shapeshifting
         if (Input.GetButtonDown("ShiftToHuman"))
         {
             shapeshiftController.SwitchShape(Shapes.human);
@@ -65,6 +67,20 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("ShiftToFox"))
         {
             shapeshiftController.SwitchShape(Shapes.fox);
+        }
+        if (Input.GetButtonDown("ShiftToBear"))
+        {
+            shapeshiftController.SwitchShape(Shapes.bear);
+        }
+        if (Input.GetButtonDown("ShiftToSeal"))
+        {
+            shapeshiftController.SwitchShape(Shapes.seal);
+        }
+        //Interacte
+        if (Input.GetButtonDown("Interact"))
+        {
+            //use or interact 
+            checkpoint.ActivateCheckpoint();
         }
 
         //Delete later
