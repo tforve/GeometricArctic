@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Health : MonoBehaviour
 {
     private static Health instance;
-    
+
     public static Health MyInstance
     {
         get
@@ -18,16 +18,17 @@ public class Health : MonoBehaviour
             return instance;
         }
     }
-    
+
     // ------------
-    
+
     [SerializeField] private int health;
     [SerializeField] private int maxHealth;
     [SerializeField] private Image[] healths;
     [SerializeField] private Sprite emptyHealth_even, emptyHealth_odd;
     [SerializeField] private Sprite filledHealth_even, filledHealth_odd;
 
-   
+    private GameMaster gameMaster;
+
     //Get & set Health from other scripts
     public int MyHealth
     {
@@ -38,31 +39,20 @@ public class Health : MonoBehaviour
     void Start()
     {
         UpdateHealth();
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            Hit(2);
-        }
-
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            ReplanishHealth(1);
-        }
+        gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
     }
 
     /// <summary>
-    /// Hit player with amount of Damage.
+    /// Hit player.
     /// </summary>
-    /// <param name="dmg"></param>
+    /// <param name="dmg">the amount of damage done</param>
     public void Hit(int dmg)
     {
         health -= dmg;
         UpdateHealth();
     }
 
+    ///<summary> Replanish amount of hp </summary>
     public void ReplanishHealth(int hp)
     {
         health += hp;
@@ -76,8 +66,12 @@ public class Health : MonoBehaviour
     {
         Debug.Log("Player is Dead");
         // Reset to last Savepoint
+
+        // Debug Only. Delete later
+        gameMaster.LoadCurrentScene();
+
     }
-    
+
     /// <summary>
     /// Update Current Health to correct amount.
     /// </summary>
@@ -85,14 +79,14 @@ public class Health : MonoBehaviour
     {
         if (health > maxHealth) health = maxHealth;
         if (health <= 0) Die();
-    
+
 
         for (int currentTriangle = 0; currentTriangle < healths.Length; currentTriangle++)
         {
             //set correct amount of Triangles
             if (currentTriangle < maxHealth)
             {
-                    healths[currentTriangle].enabled = true;
+                healths[currentTriangle].enabled = true;
             }
             else
             {
@@ -123,7 +117,7 @@ public class Health : MonoBehaviour
                 {
                     healths[currentTriangle].sprite = emptyHealth_odd;
                 }
-     
+
 
             }
         }

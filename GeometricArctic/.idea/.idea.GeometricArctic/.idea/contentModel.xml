@@ -196,6 +196,9 @@
             <e p="CameraController.cs" t="Include" />
             <e p="ShapeshiftController.cs" t="Include" />
           </e>
+          <e p="GameMaster" t="Include">
+            <e p="GameMaster.cs" t="Include" />
+          </e>
           <e p="Particle Systems" t="Include">
             <e p="DestroyParticleSystem.cs" t="Include" />
             <e p="MoveParticlesToTarget.cs" t="Include" />

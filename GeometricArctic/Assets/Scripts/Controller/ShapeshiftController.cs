@@ -14,7 +14,7 @@ public class ShapeshiftController : MonoBehaviour
     private CharacterController3D controller3D;                             // used to change CharacterControll related values
     private PlayerMovement playerMovement;                                  // relevant for Inputs and to change runSpeed
     private Health resource;
-    private Shapes currentShape = Shapes.fox;                             // current shape, needed for checks
+    private Shapes currentShape = Shapes.human;                             // current shape, needed for checks
 
     //Particle system for Shapeshifteffect
     [SerializeField] private ParticleSystem shapeShiftParticleSystem;

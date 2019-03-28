@@ -4,8 +4,8 @@ using System.Runtime.Remoting.Contexts;
 using UnityEngine;
 using UnityEngine.Experimental.UIElements;
 
-//Forms the Player can switch to 
-public enum Shapes { human, fox, bear, seal };
+public enum Shapes { human, fox, bear, seal };          // Forms the Player can switch to 
+public enum Interactables { checkpoint };               // Interactables Player can use
 
 [RequireComponent(typeof(CharacterController3D))]
 public class PlayerMovement : MonoBehaviour
@@ -20,6 +20,14 @@ public class PlayerMovement : MonoBehaviour
 
     // Shapeshifting
     private ShapeshiftController shapeshiftController;
+    // Interact
+    private Vector3 lastCheckpointPos;            // transform.position of last Checkpoint collided with
+    private GameMaster gameMaster;
+    private bool isOnTrigger = false;             // bool to check if near to interactable Trigger, has to be changed on ALL Interactables
+    private Interactables interactables;
+
+
+    // ---------------------
 
     public float MyRunSpeed
     {
@@ -27,15 +35,27 @@ public class PlayerMovement : MonoBehaviour
         set { runSpeed = value; }
     }
 
+    public Vector3 MyLastCheckpointPos
+    {
+        set { lastCheckpointPos = value; }
+    }
+
+    public bool MyIsOnTrigger
+    {
+        set { isOnTrigger = value; }
+    }
+
+    // --------------------
 
     void Start()
     {
         controller = GetComponent<CharacterController3D>();
         shapeshiftController = GetComponent<ShapeshiftController>();
+        gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
     }
 
 
-    // Update is called once per frame
+    // Complete Input
     void Update()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed * 10.0f; //Why so slow
@@ -57,7 +77,7 @@ public class PlayerMovement : MonoBehaviour
         {
             crouch = false;
         }
-
+        //Shapeshifting
         if (Input.GetButtonDown("ShiftToHuman"))
         {
             shapeshiftController.SwitchShape(Shapes.human);
@@ -65,6 +85,25 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("ShiftToFox"))
         {
             shapeshiftController.SwitchShape(Shapes.fox);
+        }
+        if (Input.GetButtonDown("ShiftToBear"))
+        {
+            shapeshiftController.SwitchShape(Shapes.bear);
+        }
+        if (Input.GetButtonDown("ShiftToSeal"))
+        {
+            shapeshiftController.SwitchShape(Shapes.seal);
+        }
+        //Interact
+        if (Input.GetButtonDown("Interact") && isOnTrigger == true)
+        {
+            //need to check what type of Interactable it is
+            switch (interactables)
+            {
+                case Interactables.checkpoint:
+                    gameMaster.SetLastCheckpoint(lastCheckpointPos);
+                    break;
+            }
         }
 
         //Delete later
