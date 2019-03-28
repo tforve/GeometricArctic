@@ -4,7 +4,7 @@ using System.Runtime.Remoting.Contexts;
 using UnityEngine;
 using UnityEngine.Experimental.UIElements;
 
-//Forms the Player can switch to 
+// Forms the Player can switch to 
 public enum Shapes { human, fox, bear, seal };
 
 [RequireComponent(typeof(CharacterController3D))]
@@ -20,8 +20,14 @@ public class PlayerMovement : MonoBehaviour
 
     // Shapeshifting
     private ShapeshiftController shapeshiftController;
-    //Interact
-    private Checkpoint checkpoint;
+    // Interact
+   // private Checkpoint lastCheckpoint;         //last saved Checkpoint, at the start of the game == Levelstart
+    private Vector3 lastCheckpointPos;           // transform.position of last Checkpoint collided with
+    private GameMaster gameMaster;
+    private bool isOnTrigger = true;                    // bool to check if near to interactable Trigger
+
+
+    // ---------------------
 
     public float MyRunSpeed
     {
@@ -29,15 +35,27 @@ public class PlayerMovement : MonoBehaviour
         set { runSpeed = value; }
     }
 
+    public Vector3 MyLastCheckpointPos
+    {
+        set {lastCheckpointPos = value;}
+    }
+
+    public bool MyIsOnTrigger
+    {
+        set {isOnTrigger = value;}
+    }
+
+    // --------------------
 
     void Start()
     {
         controller = GetComponent<CharacterController3D>();
         shapeshiftController = GetComponent<ShapeshiftController>();
+        gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
     }
 
 
-    // Update is called once per frame
+    // Complete Input
     void Update()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed * 10.0f; //Why so slow
@@ -77,10 +95,11 @@ public class PlayerMovement : MonoBehaviour
             shapeshiftController.SwitchShape(Shapes.seal);
         }
         //Interacte
-        if (Input.GetButtonDown("Interact"))
+        if (Input.GetButtonDown("Interact") && isOnTrigger == true)
         {
-            //use or interact 
-            checkpoint.ActivateCheckpoint();
+            //need to check what type of Interactable it is
+            //get checkPoint colliding with
+            gameMaster.SetLastCheckpoint(lastCheckpointPos);
         }
 
         //Delete later

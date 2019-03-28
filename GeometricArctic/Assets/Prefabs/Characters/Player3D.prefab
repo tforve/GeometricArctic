@@ -277,7 +277,7 @@ MonoBehaviour:
   m_MovementSmoothing: 0.05
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 567
+    m_Bits: 535
   m_JumpForce: 15
   m_AirControl: 1
   m_FallMultiplier: 2.5

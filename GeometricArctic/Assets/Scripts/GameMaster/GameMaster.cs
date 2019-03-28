@@ -34,4 +34,12 @@ public class GameMaster : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+
+    ///<summary> Set lastCheckpointPos to the pos of last checkpoint you where colliding with</summary>
+    public void SetLastCheckpoint(Vector3 pos)
+    {
+        lastCheckPointPos = pos;
+    }
 }
+
