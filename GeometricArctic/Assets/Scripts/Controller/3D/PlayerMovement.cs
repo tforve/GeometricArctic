@@ -4,8 +4,8 @@ using System.Runtime.Remoting.Contexts;
 using UnityEngine;
 using UnityEngine.Experimental.UIElements;
 
-public enum Shapes { human, fox, bear, seal };          // Forms the Player can switch to 
-public enum Interactables { checkpoint };               // Interactables Player can use
+public enum Shapes { human, fox, bear, seal };                          // Forms the Player can switch to 
+public enum Interactables { checkpoint, block, handle };                // Interactables Player can use
 
 [RequireComponent(typeof(CharacterController3D))]
 public class PlayerMovement : MonoBehaviour
@@ -20,12 +20,12 @@ public class PlayerMovement : MonoBehaviour
 
     // Shapeshifting
     private ShapeshiftController shapeshiftController;
-    // Interact
-    private Vector3 lastCheckpointPos;            // transform.position of last Checkpoint collided with
-    private GameMaster gameMaster;
-    private bool isOnTrigger = false;             // bool to check if near to interactable Trigger, has to be changed on ALL Interactables
-    private Interactables interactables;
 
+    // Interact
+    private GameMaster gameMaster;
+    private Interactables interactables;
+    private Vector3 lastCheckpointPos;                                  // transform.position of last Checkpoint collided with
+    private bool isOnTrigger = false;                                   // bool to check if near to interactable Trigger, has to be changed on ALL Interactables
 
     // ---------------------
 
@@ -52,9 +52,7 @@ public class PlayerMovement : MonoBehaviour
         controller = GetComponent<CharacterController3D>();
         shapeshiftController = GetComponent<ShapeshiftController>();
         gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
-        
     }
-
 
     // Complete Input
     void Update()
@@ -103,6 +101,12 @@ public class PlayerMovement : MonoBehaviour
             {
                 case Interactables.checkpoint:
                     gameMaster.SetLastCheckpoint(lastCheckpointPos);
+                    break;
+                case Interactables.block:
+                    // need bearForm - can Push and pull heavy Objects
+                    break;
+                case Interactables.handle:
+                    // need girlForm - can use handles
                     break;
             }
         }

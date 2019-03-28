@@ -44,7 +44,7 @@ public class ShapeshiftController : MonoBehaviour
     [SerializeField] private BoxCollider s_BoxCollider;
     [SerializeField] private CapsuleCollider s_CapsulCollider;
     [SerializeField] private float s_runSpeed = 5.0f;
-    [SerializeField] private float s_jumpForce = 3.0f; 
+    [SerializeField] private float s_jumpForce = 3.0f;
 
     private List<Collider> oldColliders = new List<Collider>();             // List of all active Colliders
     private SpriteRenderer spriteRenderer;
@@ -117,7 +117,6 @@ public class ShapeshiftController : MonoBehaviour
 
     }
 
-
     private IEnumerator ShapeShiftTime(float shapeShiftTime)
     {
         Color tmp = spriteRenderer.color;
@@ -132,9 +131,9 @@ public class ShapeshiftController : MonoBehaviour
     }
 
     /// <summary>
-    /// Handle the complete Shapeshifting. 
+    /// Handle the complete Shapeshifting. Enum of possible shapes is located in PlayerMovement.cs
     /// </summary>
-    /// <param name="shapes"></param>
+    /// <param name="shapes"> human, fox, bear, seal</param>
     public void SwitchShape(Shapes shapes)
     {
         if (currentShape != shapes)
@@ -142,13 +141,10 @@ public class ShapeshiftController : MonoBehaviour
             currentShape = shapes;
 
             HandleColliders();
-            //change ShapeshiftForm to actual Form		
-
-            //need to Check if it isnt already in that form. Only if NOT start shapeshift
-
             //start effect
             StartShapeshiftEffect();
 
+            //change ShapeshiftForm to actual Form		
             switch (shapes)
             {
                 case Shapes.human:
