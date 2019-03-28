@@ -9,18 +9,12 @@ public class Checkpoint : MonoBehaviour
     private GameMaster gameMaster;
     [SerializeField] private GameObject text;
     [SerializeField] private PlayerMovement playerMovement;
-    private bool isOnTrigger = false;                           // bool to check if player is near to Collider
 
     // --------------
 
     public Vector3 MyCheckpointPos
     {
         get { return this.transform.position; }
-    }
-
-    public bool MyIsOnTrigger
-    {
-        get { return isOnTrigger;}
     }
     // --------------
 
@@ -36,7 +30,7 @@ public class Checkpoint : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             text.SetActive(true);
-            isOnTrigger = true;
+            playerMovement.MyIsOnTrigger = true;            // has to be done with all interactables
             playerMovement.MyLastCheckpointPos = this.transform.position;
         }
     }
@@ -46,7 +40,7 @@ public class Checkpoint : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             text.SetActive(false);
-            isOnTrigger = false;
+            playerMovement.MyIsOnTrigger = false;
         }
     }
 }

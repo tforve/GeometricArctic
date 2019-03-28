@@ -4,8 +4,8 @@ using System.Runtime.Remoting.Contexts;
 using UnityEngine;
 using UnityEngine.Experimental.UIElements;
 
-// Forms the Player can switch to 
-public enum Shapes { human, fox, bear, seal };
+public enum Shapes { human, fox, bear, seal };          // Forms the Player can switch to 
+public enum Interactables { checkpoint };               // Interactables Player can use
 
 [RequireComponent(typeof(CharacterController3D))]
 public class PlayerMovement : MonoBehaviour
@@ -21,10 +21,10 @@ public class PlayerMovement : MonoBehaviour
     // Shapeshifting
     private ShapeshiftController shapeshiftController;
     // Interact
-   // private Checkpoint lastCheckpoint;         //last saved Checkpoint, at the start of the game == Levelstart
-    private Vector3 lastCheckpointPos;           // transform.position of last Checkpoint collided with
+    private Vector3 lastCheckpointPos;            // transform.position of last Checkpoint collided with
     private GameMaster gameMaster;
-    private bool isOnTrigger = true;                    // bool to check if near to interactable Trigger
+    private bool isOnTrigger = false;             // bool to check if near to interactable Trigger, has to be changed on ALL Interactables
+    private Interactables interactables;
 
 
     // ---------------------
@@ -37,12 +37,12 @@ public class PlayerMovement : MonoBehaviour
 
     public Vector3 MyLastCheckpointPos
     {
-        set {lastCheckpointPos = value;}
+        set { lastCheckpointPos = value; }
     }
 
     public bool MyIsOnTrigger
     {
-        set {isOnTrigger = value;}
+        set { isOnTrigger = value; }
     }
 
     // --------------------
@@ -94,12 +94,16 @@ public class PlayerMovement : MonoBehaviour
         {
             shapeshiftController.SwitchShape(Shapes.seal);
         }
-        //Interacte
+        //Interact
         if (Input.GetButtonDown("Interact") && isOnTrigger == true)
         {
             //need to check what type of Interactable it is
-            //get checkPoint colliding with
-            gameMaster.SetLastCheckpoint(lastCheckpointPos);
+            switch (interactables)
+            {
+                case Interactables.checkpoint:
+                    gameMaster.SetLastCheckpoint(lastCheckpointPos);
+                    break;
+            }
         }
 
         //Delete later
