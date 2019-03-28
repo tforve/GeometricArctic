@@ -136,7 +136,6 @@ GameObject:
   - component: {fileID: 6670586817416888546}
   - component: {fileID: 114574107724588428}
   - component: {fileID: 2427811345984168880}
-  - component: {fileID: 6779808165375774027}
   m_Layer: 8
   m_Name: Player3D
   m_TagString: Player
@@ -222,7 +221,7 @@ Animator:
   m_GameObject: {fileID: 1748042983550088}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9b810cac377fcf64d8fabf3bfaafb711, type: 2}
+  m_Controller: {fileID: 9100000, guid: f4bc12d5e8ea9eb4286c685d65f3d695, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -259,7 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ad8546c8339f742b5a4b7035e66d18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 10
+  runSpeed: 7
   animator: {fileID: 95706528647247650}
 --- !u!114 &114043851804476764
 MonoBehaviour:
@@ -334,7 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
-  maxHealth: 1
+  maxHealth: 3
   healths:
   - {fileID: 0}
   - {fileID: 0}
@@ -374,15 +373,23 @@ MonoBehaviour:
   g_Animation: {fileID: 9100000, guid: f4bc12d5e8ea9eb4286c685d65f3d695, type: 2}
   g_BoxCollider: {fileID: 65624602703030332}
   g_CapsulCollider: {fileID: 136418108187490344}
+  g_runSpeed: 7
+  g_jumpForce: 15
   f_Animation: {fileID: 9100000, guid: 9b810cac377fcf64d8fabf3bfaafb711, type: 2}
   f_BoxCollider: {fileID: 65636719771015362}
   f_CapsulCollider: {fileID: 136243252570692114}
+  f_runSpeed: 10
+  f_jumpForce: 15
   b_Animation: {fileID: 9100000, guid: c52d82e0142822548a8e502b41633cb1, type: 2}
   b_BoxCollider: {fileID: 65887882919701396}
   b_CapsulCollider: {fileID: 136719725753699456}
+  b_runSpeed: 8
+  b_jumpForce: 2
   s_Animation: {fileID: 9100000, guid: 26b8200c73ef5954f9091963836d7d85, type: 2}
   s_BoxCollider: {fileID: 65542106662327948}
   s_CapsulCollider: {fileID: 136810200256857302}
+  s_runSpeed: 5
+  s_jumpForce: 3
 --- !u!330 &2427811345984168880
 ParticleSystemForceField:
   m_ObjectHideFlags: 0
@@ -878,18 +885,6 @@ ParticleSystemForceField:
         m_RotationOrder: 4
     m_MultiplyDragByParticleSize: 1
     m_MultiplyDragByParticleVelocity: 1
---- !u!114 &6779808165375774027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1748042983550088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e41371c777615e045b5168166e448b69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1834557399541248
 GameObject:
   m_ObjectHideFlags: 0

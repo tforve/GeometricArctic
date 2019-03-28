@@ -1641,11 +1641,6 @@ PrefabInstance:
       propertyPath: healths.Array.data[4]
       value: 
       objectReference: {fileID: 1580077798}
-    - target: {fileID: 114136969254293260, guid: 64b00eb8fc4f01746a3b35cd88ff8008,
-        type: 3}
-      propertyPath: maxHealth
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 114043851804476764, guid: 64b00eb8fc4f01746a3b35cd88ff8008,
         type: 3}
       propertyPath: m_JumpParticleSpawner.Array.data[0]
@@ -1656,18 +1651,7 @@ PrefabInstance:
       propertyPath: shapeShiftParticleSystem
       value: 
       objectReference: {fileID: 382503353}
-    - target: {fileID: 95706528647247650, guid: 64b00eb8fc4f01746a3b35cd88ff8008,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: f4bc12d5e8ea9eb4286c685d65f3d695, type: 2}
-    - target: {fileID: 114063573016221108, guid: 64b00eb8fc4f01746a3b35cd88ff8008,
-        type: 3}
-      propertyPath: lastCheckpoint
-      value: 
-      objectReference: {fileID: 2145803828}
-    m_RemovedComponents:
-    - {fileID: 6779808165375774027, guid: 64b00eb8fc4f01746a3b35cd88ff8008, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64b00eb8fc4f01746a3b35cd88ff8008, type: 3}
 --- !u!114 &684344301 stripped
 MonoBehaviour:
@@ -3111,10 +3095,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6707349293980117930, guid: 98f045b7072048343835d0bcc89cecb5,
+    - target: {fileID: 6707349293980117935, guid: 98f045b7072048343835d0bcc89cecb5,
         type: 3}
-      propertyPath: playerMovement
-      value: 
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707349293980117934, guid: 98f045b7072048343835d0bcc89cecb5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98f045b7072048343835d0bcc89cecb5, type: 3}
@@ -4995,19 +4984,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6707349293980117930, guid: 98f045b7072048343835d0bcc89cecb5,
-        type: 3}
-      propertyPath: playerMovement
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1548824890, guid: 98f045b7072048343835d0bcc89cecb5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1548824893, guid: 98f045b7072048343835d0bcc89cecb5, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98f045b7072048343835d0bcc89cecb5, type: 3}
 --- !u!1001 &2087178555
@@ -5274,18 +5250,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2140497847}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2145803828 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6707349293980117930, guid: 98f045b7072048343835d0bcc89cecb5,
-    type: 3}
-  m_PrefabInstance: {fileID: 6707349293302330782}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03263b2af835d8c46b48aa695e80eb87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &6707349293302330782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5352,11 +5316,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6707349293980117930, guid: 98f045b7072048343835d0bcc89cecb5,
-        type: 3}
-      propertyPath: playerMovement
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98f045b7072048343835d0bcc89cecb5, type: 3}

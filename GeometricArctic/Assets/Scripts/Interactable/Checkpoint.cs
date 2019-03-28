@@ -7,10 +7,9 @@ public class Checkpoint : MonoBehaviour
 {
 
     private GameMaster gameMaster;
-    [SerializeField] private GameObject text;
-    [SerializeField] private PlayerMovement playerMovement;
+    private PlayerMovement playerMovement;
 
-    // --------------
+    [SerializeField] private GameObject text;                       // text displayed when player is standing near to Checkpoint
 
     // --------------
 
@@ -26,7 +25,7 @@ public class Checkpoint : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             text.SetActive(true);
-            playerMovement.MyIsOnTrigger = true;            // has to be done with all interactables
+            playerMovement.MyIsOnTrigger = true;                     // has to be done with all interactables
             playerMovement.MyLastCheckpointPos = this.transform.position;
         }
     }
