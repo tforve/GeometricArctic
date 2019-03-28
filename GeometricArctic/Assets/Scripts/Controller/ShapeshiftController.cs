@@ -14,7 +14,7 @@ public class ShapeshiftController : MonoBehaviour
     private CharacterController3D controller3D;                             // used to change CharacterControll related values
     private PlayerMovement playerMovement;                                  // relevant for Inputs and to change runSpeed
     private Health resource;
-    private Shapes currentShape = Shapes.human;                             // current shape, needed for checks
+    private Shapes currentShape = Shapes.human;                               // current shape, needed for checks
 
     //Particle system for Shapeshifteffect
     [SerializeField] private ParticleSystem shapeShiftParticleSystem;
@@ -25,18 +25,26 @@ public class ShapeshiftController : MonoBehaviour
     [SerializeField] private RuntimeAnimatorController g_Animation;
     [SerializeField] private BoxCollider g_BoxCollider;
     [SerializeField] private CapsuleCollider g_CapsulCollider;
+    [SerializeField] private float g_runSpeed = 7.0f;
+    [SerializeField] private float g_jumpForce = 15.0f;
     [Header("Fox")]
     [SerializeField] private RuntimeAnimatorController f_Animation;
     [SerializeField] private BoxCollider f_BoxCollider;
     [SerializeField] private CapsuleCollider f_CapsulCollider;
+    [SerializeField] private float f_runSpeed = 10.0f;
+    [SerializeField] private float f_jumpForce = 15.0f;
     [Header("Bear")]
     [SerializeField] private RuntimeAnimatorController b_Animation;
     [SerializeField] private BoxCollider b_BoxCollider;
     [SerializeField] private CapsuleCollider b_CapsulCollider;
+    [SerializeField] private float b_runSpeed = 8.0f;
+    [SerializeField] private float b_jumpForce = 2.0f;
     [Header("Seal")]
     [SerializeField] private RuntimeAnimatorController s_Animation;
     [SerializeField] private BoxCollider s_BoxCollider;
     [SerializeField] private CapsuleCollider s_CapsulCollider;
+    [SerializeField] private float s_runSpeed = 5.0f;
+    [SerializeField] private float s_jumpForce = 3.0f; 
 
     private List<Collider> oldColliders = new List<Collider>();             // List of all active Colliders
     private SpriteRenderer spriteRenderer;
@@ -152,8 +160,8 @@ public class ShapeshiftController : MonoBehaviour
                     // evtl. controlls austauschen
 
                     // movespeed, jumpForce etc. anpassen
-                    controller3D.MyJumpforce = 15;
-                    playerMovement.MyRunSpeed = 7;
+                    playerMovement.MyRunSpeed = g_runSpeed;
+                    controller3D.MyJumpforce = g_jumpForce;
                     // ressource Cost for Shapeshift
                     resource.Hit(1);
                     break;
@@ -162,8 +170,8 @@ public class ShapeshiftController : MonoBehaviour
                     f_BoxCollider.enabled = true;
                     f_CapsulCollider.enabled = true;
                     animator.runtimeAnimatorController = f_Animation;
-                    controller3D.MyJumpforce = 15;
-                    playerMovement.MyRunSpeed = 10;
+                    playerMovement.MyRunSpeed = f_runSpeed;
+                    controller3D.MyJumpforce = f_jumpForce;
                     resource.Hit(1);
                     break;
 
@@ -171,8 +179,8 @@ public class ShapeshiftController : MonoBehaviour
                     b_BoxCollider.enabled = true;
                     b_CapsulCollider.enabled = true;
                     animator.runtimeAnimatorController = b_Animation;
-                    controller3D.MyJumpforce = 0;
-                    playerMovement.MyRunSpeed = 8;
+                    playerMovement.MyRunSpeed = b_runSpeed;
+                    controller3D.MyJumpforce = b_jumpForce;
                     resource.Hit(1);
                     break;
 
@@ -180,8 +188,8 @@ public class ShapeshiftController : MonoBehaviour
                     s_BoxCollider.enabled = true;
                     s_CapsulCollider.enabled = true;
                     animator.runtimeAnimatorController = s_Animation;
-                    controller3D.MyJumpforce = 3;
-                    playerMovement.MyRunSpeed = 5;
+                    playerMovement.MyRunSpeed = s_runSpeed;
+                    controller3D.MyJumpforce = s_jumpForce;
                     resource.Hit(1);
                     break;
             }

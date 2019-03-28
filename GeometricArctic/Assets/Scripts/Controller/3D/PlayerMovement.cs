@@ -11,7 +11,7 @@ public enum Interactables { checkpoint };               // Interactables Player 
 public class PlayerMovement : MonoBehaviour
 {
 
-    [SerializeField] private float runSpeed = 40.0f;
+    [SerializeField] private float runSpeed;
     [SerializeField] private Animator animator;
     private CharacterController3D controller;
     private float horizontalMove = 0.0f;
@@ -52,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
         controller = GetComponent<CharacterController3D>();
         shapeshiftController = GetComponent<ShapeshiftController>();
         gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
+        
     }
 
 

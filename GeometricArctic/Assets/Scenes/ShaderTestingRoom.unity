@@ -1656,6 +1656,11 @@ PrefabInstance:
       propertyPath: shapeShiftParticleSystem
       value: 
       objectReference: {fileID: 382503353}
+    - target: {fileID: 95706528647247650, guid: 64b00eb8fc4f01746a3b35cd88ff8008,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f4bc12d5e8ea9eb4286c685d65f3d695, type: 2}
     - target: {fileID: 114063573016221108, guid: 64b00eb8fc4f01746a3b35cd88ff8008,
         type: 3}
       propertyPath: lastCheckpoint

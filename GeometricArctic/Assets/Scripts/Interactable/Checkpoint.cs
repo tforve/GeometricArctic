@@ -12,10 +12,6 @@ public class Checkpoint : MonoBehaviour
 
     // --------------
 
-    public Vector3 MyCheckpointPos
-    {
-        get { return this.transform.position; }
-    }
     // --------------
 
     void Start()
