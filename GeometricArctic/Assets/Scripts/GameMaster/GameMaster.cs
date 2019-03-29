@@ -21,12 +21,21 @@ public class GameMaster : MonoBehaviour
     }
     // --------------
 
+    [SerializeField] private GameObject levelStart;
     [SerializeField] private Vector3 lastCheckPointPos;               // Save the last transform.position of any Checkpoints
 
     public Vector3 MyLastCheckpointPos
     {
         get { return lastCheckPointPos; }
         set { lastCheckPointPos = value; }
+    }
+
+    void Start()
+    {
+        //Setup Levelstart as std 
+        lastCheckPointPos.x = levelStart.transform.position.x;
+        lastCheckPointPos.y = levelStart.transform.position.y;
+        lastCheckPointPos.z = levelStart.transform.position.z;
     }
 
     ///<summary>Reload the Current Scene. Used after Player died</summary>

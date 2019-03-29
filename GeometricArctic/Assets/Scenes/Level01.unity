@@ -4861,7 +4861,7 @@ PrefabInstance:
     - target: {fileID: 6707349293980117932, guid: 98f045b7072048343835d0bcc89cecb5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.9
+      value: -42
       objectReference: {fileID: 0}
     - target: {fileID: 6707349293980117932, guid: 98f045b7072048343835d0bcc89cecb5,
         type: 3}
@@ -4915,6 +4915,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6707349293980117935, guid: 98f045b7072048343835d0bcc89cecb5,
         type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1548824893, guid: 98f045b7072048343835d0bcc89cecb5, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -5396,23 +5400,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8859445728984762983, guid: cc8698bf3ff00f14aba2a42e8c52addd,
         type: 3}
-      propertyPath: lastCheckPointPos.x
-      value: 13.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8859445728984762983, guid: cc8698bf3ff00f14aba2a42e8c52addd,
-        type: 3}
-      propertyPath: lastCheckPoint
+      propertyPath: levelStart
       value: 
       objectReference: {fileID: 940509295}
-    - target: {fileID: 8859445728984762983, guid: cc8698bf3ff00f14aba2a42e8c52addd,
-        type: 3}
-      propertyPath: lastCheckPointPos.y
-      value: 2.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 8859445728984762983, guid: cc8698bf3ff00f14aba2a42e8c52addd,
-        type: 3}
-      propertyPath: lastCheckPointPos.z
-      value: 1.065
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc8698bf3ff00f14aba2a42e8c52addd, type: 3}

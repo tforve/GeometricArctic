@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8859445728984762976}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.149994, y: 3.6479373, z: 1.0649986}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -43,4 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83dd6a4f3a3c7b145941e9ba7c0e86c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastCheckPointPos: {x: 35.47, y: 2.36, z: 0}
+  levelStart: {fileID: 0}
+  lastCheckPointPos: {x: 13.15, y: 2.36, z: 1.065}
