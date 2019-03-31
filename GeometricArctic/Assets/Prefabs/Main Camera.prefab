@@ -59,7 +59,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 525
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Blur: 1
   m_Downsampling: 3
   m_OcclusionAttenuation: 1.03
-  m_MinZ: 0.01
+  m_MinZ: 0.444
   m_SSAOShader: {fileID: 4800000, guid: 43ca18288c424f645aaa1e9e07f04c50, type: 3}
   m_RandomTexture: {fileID: 2800000, guid: a181ca8e3c62f3e4b8f183f6c586b032, type: 3}
 --- !u!114 &2552661142598459428
@@ -136,8 +136,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanceFog: 1
   excludeFarPixels: 1
-  useRadialDistance: 0
-  heightFog: 0
+  useRadialDistance: 1
+  heightFog: 1
   height: 1.36
   heightDensity: 2.08
   startDistance: 37.06

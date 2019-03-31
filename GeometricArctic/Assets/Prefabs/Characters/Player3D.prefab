@@ -288,6 +288,7 @@ MonoBehaviour:
   - {fileID: 0}
   k_CeilingRadius: 0.2
   k_GroundedRadius: 0.22
+  mainCam: {fileID: 0}
   OnLandEvent:
     m_PersistentCalls:
       m_Calls:
