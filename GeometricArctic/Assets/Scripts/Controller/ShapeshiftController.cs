@@ -14,7 +14,7 @@ public class ShapeshiftController : MonoBehaviour
     private CharacterController3D controller3D;                             // used to change CharacterControll related values
     private PlayerMovement playerMovement;                                  // relevant for Inputs and to change runSpeed
     private Health resource;
-    private Shapes currentShape = Shapes.human;                               // current shape, needed for checks
+    private Shapes currentShape = Shapes.fox;                               // current shape, needed for checks
 
     //Particle system for Shapeshifteffect
     [SerializeField] private ParticleSystem shapeShiftParticleSystem;
@@ -171,7 +171,7 @@ public class ShapeshiftController : MonoBehaviour
                     // set crouch
                     canCrouch = g_canCrouch;
                     // ressource Cost for Shapeshift
-                    resource.Hit(1);
+                    resource.DrainEnergy(1);
                     break;
 
                 case Shapes.fox:
@@ -183,7 +183,7 @@ public class ShapeshiftController : MonoBehaviour
                     playerMovement.MyRunSpeed = f_runSpeed;
                     controller3D.MyJumpforce = f_jumpForce;
                     canCrouch = f_canCrouch;
-                    resource.Hit(1);
+                    resource.DrainEnergy(1);
                     break;
 
                 case Shapes.bear:
@@ -193,7 +193,7 @@ public class ShapeshiftController : MonoBehaviour
                     playerMovement.MyRunSpeed = b_runSpeed;
                     controller3D.MyJumpforce = b_jumpForce;
                     canCrouch = b_canCrouch;
-                    resource.Hit(1);
+                    resource.DrainEnergy(1);
                     break;
 
                 case Shapes.seal:
@@ -203,7 +203,7 @@ public class ShapeshiftController : MonoBehaviour
                     playerMovement.MyRunSpeed = s_runSpeed;
                     controller3D.MyJumpforce = s_jumpForce;
                     canCrouch = s_canCrouch;
-                    resource.Hit(1);
+                    resource.DrainEnergy(1);
                     break;
             }
 

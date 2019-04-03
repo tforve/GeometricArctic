@@ -21,89 +21,89 @@ public class Health : MonoBehaviour
 
     // ------------
 
-    [SerializeField] private int health;
-    [SerializeField] private int maxHealth;
-    [SerializeField] private Image[] healths;
-    [SerializeField] private Sprite emptyHealth_even, emptyHealth_odd;
-    [SerializeField] private Sprite filledHealth_even, filledHealth_odd;
+    [SerializeField] private int energy;
+    [SerializeField] private int maxEnergy;
+    [SerializeField] private Image[] energies;
+    [SerializeField] private Sprite emptyEnergy_even, emptyEnergy_odd;
+    [SerializeField] private Sprite filledEnery_even, filledEnery_odd;
 
     private GameMaster gameMaster;
 
     //Get & set Health from other scripts
-    public int MyHealth
+    public int MyEnergy
     {
-        get { return health; }
-        set { health = value; }
+        get { return energy; }
+        set { energy = value; }
     }
 
     void Start()
     {
-        UpdateHealth();
+        UpdateEnergy();
         gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
     }
 
     /// <summary>
-    /// Hit player.
+    /// Use Energy of player.
     /// </summary>
-    /// <param name="dmg">the amount of damage done</param>
-    public void Hit(int dmg)
+    /// <param name="eng">the amount of Energy needed</param>
+    public void DrainEnergy(int eng)
     {
-        health -= dmg;
-        UpdateHealth();
+        energy -= eng;
+        UpdateEnergy();
     }
 
-    ///<summary> Replanish amount of hp </summary>
-    public void ReplanishHealth(int hp)
+    ///<summary> Replanish amount of energy </summary>
+    public void ReplanishEnergy(int eng)
     {
-        health += hp;
-        UpdateHealth();
+        energy += eng;
+        UpdateEnergy();
     }
 
     /// <summary>
     /// Player Dies. Needs to be implemented.
     /// </summary>> 
-    private void Die()
+    private void Empty()
     {
         Debug.Log("Player is Dead");
         // Reset to last Savepoint
 
         // Debug Only. Delete later
-        gameMaster.LoadCurrentScene();
+        //gameMaster.LoadCurrentScene();
 
     }
 
     /// <summary>
-    /// Update Current Health to correct amount.
+    /// Update Current Energy to correct amount.
     /// </summary>
-    private void UpdateHealth()
+    private void UpdateEnergy()
     {
-        if (health > maxHealth) health = maxHealth;
-        if (health <= 0) Die();
+        if (energy > maxEnergy) energy = maxEnergy;
+        if (energy <= 0) Empty();
 
 
-        for (int currentTriangle = 0; currentTriangle < healths.Length; currentTriangle++)
+        for (int currentTriangle = 0; currentTriangle < energies.Length; currentTriangle++)
         {
             //set correct amount of Triangles
-            if (currentTriangle < maxHealth)
+            if (currentTriangle < maxEnergy)
             {
-                healths[currentTriangle].enabled = true;
+                energies[currentTriangle].enabled = true;
             }
             else
             {
-                healths[currentTriangle].enabled = false;
+                energies[currentTriangle].enabled = false;
             }
 
             // check if lower health then maxHealth
-            if (currentTriangle < health)
+            if (currentTriangle < energy)
             {
                 int tmp = currentTriangle & 1;
                 if (tmp == 0)
                 {
-                    healths[currentTriangle].sprite = filledHealth_even;
+                    energies[currentTriangle].sprite = filledEnery_even;
                 }
                 else
                 {
-                    healths[currentTriangle].sprite = filledHealth_odd;
+                    energies[currentTriangle].sprite = filledEnery_odd;
                 }
             }
             else
@@ -111,11 +111,11 @@ public class Health : MonoBehaviour
                 int tmp = currentTriangle & 1;
                 if (tmp == 0)
                 {
-                    healths[currentTriangle].sprite = emptyHealth_even;
+                    energies[currentTriangle].sprite = emptyEnergy_even;
                 }
                 else
                 {
-                    healths[currentTriangle].sprite = emptyHealth_odd;
+                    energies[currentTriangle].sprite = emptyEnergy_odd;
                 }
 
 
