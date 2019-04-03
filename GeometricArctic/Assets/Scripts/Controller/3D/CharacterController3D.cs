@@ -218,4 +218,10 @@ public class CharacterController3D : MonoBehaviour
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
+
+	public void SetCrouchCollider()
+	{
+		m_CrouchDisableCollider = GetComponentInChildren<BoxCollider>();
+		Debug.Log("Test: "+m_CrouchDisableCollider);
+	}
 }

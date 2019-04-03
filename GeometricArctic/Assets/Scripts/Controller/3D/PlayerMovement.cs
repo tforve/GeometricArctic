@@ -70,7 +70,10 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Crouch"))
         {
-            crouch = true;
+            if (shapeshiftController.MyCanCrouch)           // only fox can Crouch
+            {
+                crouch = true;
+            }
         }
         else if (Input.GetButtonUp("Crouch"))
         {
