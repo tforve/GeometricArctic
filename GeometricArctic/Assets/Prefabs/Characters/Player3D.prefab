@@ -345,6 +345,8 @@ MonoBehaviour:
   emptyEnergy_odd: {fileID: 21300000, guid: a319daa1bde2c8c4396199743e57a67c, type: 3}
   filledEnery_even: {fileID: 21300004, guid: a319daa1bde2c8c4396199743e57a67c, type: 3}
   filledEnery_odd: {fileID: 21300006, guid: a319daa1bde2c8c4396199743e57a67c, type: 3}
+  health: 1
+  maxHealth: 1
 --- !u!114 &6670586817416888546
 MonoBehaviour:
   m_ObjectHideFlags: 0

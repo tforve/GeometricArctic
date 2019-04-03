@@ -27,6 +27,9 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 lastCheckpointPos;                                  // transform.position of last Checkpoint collided with
     private bool isOnTrigger = false;                                   // bool to check if near to interactable Trigger, has to be changed on ALL Interactables
 
+    // Energy for debugging
+    private Energy energy;
+
     // ---------------------
 
     public float MyRunSpeed
@@ -52,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
         controller = GetComponent<CharacterController3D>();
         shapeshiftController = GetComponent<ShapeshiftController>();
         gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
+        energy = GetComponent<Energy>();
     }
 
     // Complete Input
@@ -118,6 +122,11 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
+        }
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            energy.Hit(1);
         }
 
     }

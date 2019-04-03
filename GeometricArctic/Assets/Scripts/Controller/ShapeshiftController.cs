@@ -13,7 +13,7 @@ public class ShapeshiftController : MonoBehaviour
     private Animator animator;                                              // have to change the Animator to the correct one for every Shape
     private CharacterController3D controller3D;                             // used to change CharacterControll related values
     private PlayerMovement playerMovement;                                  // relevant for Inputs and to change runSpeed
-    private Energy resource;
+    private Energy energy;
     private Shapes currentShape = Shapes.fox;                               // current shape, needed for checks
 
     //Particle system for Shapeshifteffect
@@ -75,7 +75,7 @@ public class ShapeshiftController : MonoBehaviour
         animator = GetComponent<Animator>();
         controller3D = GetComponent<CharacterController3D>();
         playerMovement = GetComponent<PlayerMovement>();
-        resource = GetComponent<Energy>();
+        energy = GetComponent<Energy>();
 
         //particle ShapeShift stuff
         shapeShiftPsList = shapeShiftParticleSystem.GetComponentsInChildren<ParticleSystem>();
@@ -147,66 +147,69 @@ public class ShapeshiftController : MonoBehaviour
     /// <param name="shapes"> human, fox, bear, seal</param>
     public void SwitchShape(Shapes shapes)
     {
-        if (currentShape != shapes)
+        if (energy.MyEnergy > 0)
         {
-            currentShape = shapes;
-
-            HandleColliders();
-            //start effect
-            StartShapeshiftEffect();
-
-            //change ShapeshiftForm to actual Form		
-            switch (shapes)
+            if (currentShape != shapes)
             {
-                case Shapes.human:
-                    // collider aktivieren
-                    g_BoxCollider.enabled = true;
-                    g_CapsulCollider.enabled = true;
-                    // animator austauschen
-                    animator.runtimeAnimatorController = g_Animation;
-                    // evtl. controlls austauschen
-                    // movespeed, jumpForce etc. anpassen
-                    playerMovement.MyRunSpeed = g_runSpeed;
-                    controller3D.MyJumpforce = g_jumpForce;
-                    // set crouch
-                    canCrouch = g_canCrouch;
-                    // ressource Cost for Shapeshift
-                    resource.DrainEnergy(1);
-                    break;
+                currentShape = shapes;
 
-                case Shapes.fox:
-                    f_BoxCollider.enabled = true;
-                    f_CapsulCollider.enabled = true;
-                    // special Crouch collider
-                    controller3D.SetCrouchCollider();
-                    animator.runtimeAnimatorController = f_Animation;
-                    playerMovement.MyRunSpeed = f_runSpeed;
-                    controller3D.MyJumpforce = f_jumpForce;
-                    canCrouch = f_canCrouch;
-                    resource.DrainEnergy(1);
-                    break;
+                HandleColliders();
+                //start effect
+                StartShapeshiftEffect();
 
-                case Shapes.bear:
-                    b_BoxCollider.enabled = true;
-                    b_CapsulCollider.enabled = true;
-                    animator.runtimeAnimatorController = b_Animation;
-                    playerMovement.MyRunSpeed = b_runSpeed;
-                    controller3D.MyJumpforce = b_jumpForce;
-                    canCrouch = b_canCrouch;
-                    resource.DrainEnergy(1);
-                    break;
+                //change ShapeshiftForm to actual Form		
+                switch (shapes)
+                {
+                    case Shapes.human:
+                        // collider aktivieren
+                        g_BoxCollider.enabled = true;
+                        g_CapsulCollider.enabled = true;
+                        // animator austauschen
+                        animator.runtimeAnimatorController = g_Animation;
+                        // evtl. controlls austauschen
+                        // movespeed, jumpForce etc. anpassen
+                        playerMovement.MyRunSpeed = g_runSpeed;
+                        controller3D.MyJumpforce = g_jumpForce;
+                        // set crouch
+                        canCrouch = g_canCrouch;
+                        // ressource Cost for Shapeshift
+                        energy.DrainEnergy(1);
+                        break;
 
-                case Shapes.seal:
-                    s_BoxCollider.enabled = true;
-                    s_CapsulCollider.enabled = true;
-                    animator.runtimeAnimatorController = s_Animation;
-                    playerMovement.MyRunSpeed = s_runSpeed;
-                    controller3D.MyJumpforce = s_jumpForce;
-                    canCrouch = s_canCrouch;
-                    resource.DrainEnergy(1);
-                    break;
+                    case Shapes.fox:
+                        f_BoxCollider.enabled = true;
+                        f_CapsulCollider.enabled = true;
+                        // special Crouch collider
+                        controller3D.SetCrouchCollider();
+                        animator.runtimeAnimatorController = f_Animation;
+                        playerMovement.MyRunSpeed = f_runSpeed;
+                        controller3D.MyJumpforce = f_jumpForce;
+                        canCrouch = f_canCrouch;
+                        energy.DrainEnergy(1);
+                        break;
+
+                    case Shapes.bear:
+                        b_BoxCollider.enabled = true;
+                        b_CapsulCollider.enabled = true;
+                        animator.runtimeAnimatorController = b_Animation;
+                        playerMovement.MyRunSpeed = b_runSpeed;
+                        controller3D.MyJumpforce = b_jumpForce;
+                        canCrouch = b_canCrouch;
+                        energy.DrainEnergy(1);
+                        break;
+
+                    case Shapes.seal:
+                        s_BoxCollider.enabled = true;
+                        s_CapsulCollider.enabled = true;
+                        animator.runtimeAnimatorController = s_Animation;
+                        playerMovement.MyRunSpeed = s_runSpeed;
+                        controller3D.MyJumpforce = s_jumpForce;
+                        canCrouch = s_canCrouch;
+                        energy.DrainEnergy(1);
+                        break;
+                }
+
             }
-
         }
     }
 

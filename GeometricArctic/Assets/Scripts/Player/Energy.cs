@@ -21,19 +21,30 @@ public class Energy : MonoBehaviour
 
     // ------------
 
+    [Header("Energy related")]
     [SerializeField] private int energy;
     [SerializeField] private int maxEnergy;
     [SerializeField] private Image[] energies;
     [SerializeField] private Sprite emptyEnergy_even, emptyEnergy_odd;
     [SerializeField] private Sprite filledEnery_even, filledEnery_odd;
 
+    [Header("Health Related")]
+    [SerializeField] private int health;
+    [SerializeField] private int maxHealth;
+
     private GameMaster gameMaster;
 
-    //Get & set Health from other scripts
+    //Get & set Energy from other scripts
     public int MyEnergy
     {
         get { return energy; }
         set { energy = value; }
+    }
+
+    public int MyHealth
+    {
+        get { return health; }
+        set { health = value; }
     }
 
     void Start()
@@ -41,6 +52,8 @@ public class Energy : MonoBehaviour
         UpdateEnergy();
         gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
     }
+
+    // ---------- ENERGY -------------
 
     /// <summary>
     /// Use Energy of player.
@@ -64,12 +77,8 @@ public class Energy : MonoBehaviour
     /// </summary>> 
     private void Empty()
     {
-        Debug.Log("Player is Dead");
-        // Reset to last Savepoint
-
-        // Debug Only. Delete later
-        //gameMaster.LoadCurrentScene();
-
+        energy = 0;
+        Debug.Log("Player has no Energy to Shapeshift");
     }
 
     /// <summary>
@@ -79,7 +88,6 @@ public class Energy : MonoBehaviour
     {
         if (energy > maxEnergy) energy = maxEnergy;
         if (energy <= 0) Empty();
-
 
         for (int currentTriangle = 0; currentTriangle < energies.Length; currentTriangle++)
         {
@@ -121,6 +129,42 @@ public class Energy : MonoBehaviour
 
             }
         }
+    }
+
+    // ---------- HEALTH -------------
+
+    /// <summary>
+    /// Health of player.
+    /// </summary>
+    /// <param name="dmg">the amount of Damage done to Player</param>
+    public void Hit(int dmg)
+    {
+        health -= dmg;
+        UpdateHealth();
+    }
+
+    ///<summary> Replanish amount of health </summary>
+    public void ReplanishHealth(int hp)
+    {
+        health += hp;
+        UpdateHealth();
+    }
+
+    /// <summary>
+    /// Player Dies. Needs to be implemented.
+    /// </summary>> 
+    private void Die()
+    {
+        // Debug Only. Delete later
+        Debug.Log("Player is Dead");
+        gameMaster.LoadCurrentScene();
+
+    }
+
+    private void UpdateHealth()
+    {
+        if (health >= maxHealth) health = maxHealth;
+        if (health <= 0) Die();
     }
 
 

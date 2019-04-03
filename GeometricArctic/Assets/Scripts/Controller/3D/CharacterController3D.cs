@@ -222,6 +222,5 @@ public class CharacterController3D : MonoBehaviour
 	public void SetCrouchCollider()
 	{
 		m_CrouchDisableCollider = GetComponentInChildren<BoxCollider>();
-		Debug.Log("Test: "+m_CrouchDisableCollider);
 	}
 }
