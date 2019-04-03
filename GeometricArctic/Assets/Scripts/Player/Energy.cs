@@ -21,14 +21,14 @@ public class Energy : MonoBehaviour
 
     // ------------
 
-    [Header("Energy related")]
+    [Header("Energy")]
     [SerializeField] private int energy;
     [SerializeField] private int maxEnergy;
     [SerializeField] private Image[] energies;
     [SerializeField] private Sprite emptyEnergy_even, emptyEnergy_odd;
     [SerializeField] private Sprite filledEnery_even, filledEnery_odd;
 
-    [Header("Health Related")]
+    [Header("Health")]
     [SerializeField] private int health;
     [SerializeField] private int maxHealth;
 
