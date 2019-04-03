@@ -21,7 +21,7 @@ public class CharacterController3D : MonoBehaviour
 	[SerializeField] private Collider 	m_CrouchDisableCollider;					// A collider that will be disabled when crouching
 	
 	[Header("Effects")]
-	[SerializeField] private ParticleSystem[] m_JumpParticleSpawner;					//ParticleSystems to the Feet of the Character
+	[SerializeField] private ParticleSystem[] m_JumpParticleSpawner;				//ParticleSystems to the Feet of the Character
 	private float PS_spawnToFeetOffsetY = -0.8f;
 	private float PS_spawnToFeetOffsetX = 0.8f;
 
@@ -32,6 +32,9 @@ public class CharacterController3D : MonoBehaviour
 	private Rigidbody 	m_Rigidbody;
 	private bool		m_FacingRight = true;  				// For determining which way the player is currently facing.
 	private Vector3		m_Velocity = Vector3.zero;
+
+	[Header("Others")]
+	[SerializeField] private Camera mainCam;				// to adjust while Crouching 
 
 	[Header("Events")][Space]
 	public UnityEvent	OnLandEvent;
@@ -172,6 +175,10 @@ public class CharacterController3D : MonoBehaviour
 			{
 				Flip();
 			}
+
+			// Adjust Maincamera while Crouching
+			Vector3 cameraAdjustment = new Vector3();
+			// mainCam.transform
 		}
 
 		// If the player should jump Add a vertical force to the player.
@@ -210,5 +217,10 @@ public class CharacterController3D : MonoBehaviour
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+	}
+
+	public void SetCrouchCollider()
+	{
+		m_CrouchDisableCollider = GetComponentInChildren<BoxCollider>();
 	}
 }

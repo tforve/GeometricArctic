@@ -30,7 +30,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4827420975914680}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &65624602703030332
 BoxCollider:
@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 54727811432748682}
   - component: {fileID: 114063573016221108}
   - component: {fileID: 114043851804476764}
-  - component: {fileID: 114136969254293260}
+  - component: {fileID: 6281819649694476858}
   - component: {fileID: 6670586817416888546}
   - component: {fileID: 114574107724588428}
   - component: {fileID: 2427811345984168880}
@@ -156,8 +156,8 @@ Transform:
   m_Children:
   - {fileID: 4942850801209336}
   - {fileID: 4319982785251620}
-  - {fileID: 4321915950245528}
   - {fileID: 4079380454751212}
+  - {fileID: 4321915950245528}
   - {fileID: 4486388711990254}
   - {fileID: 4034143472400424}
   m_Father: {fileID: 0}
@@ -221,7 +221,7 @@ Animator:
   m_GameObject: {fileID: 1748042983550088}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f4bc12d5e8ea9eb4286c685d65f3d695, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9b810cac377fcf64d8fabf3bfaafb711, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ad8546c8339f742b5a4b7035e66d18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 7
+  runSpeed: 10
   animator: {fileID: 95706528647247650}
 --- !u!114 &114043851804476764
 MonoBehaviour:
@@ -288,6 +288,7 @@ MonoBehaviour:
   - {fileID: 0}
   k_CeilingRadius: 0.2
   k_GroundedRadius: 0.22
+  mainCam: {fileID: 0}
   OnLandEvent:
     m_PersistentCalls:
       m_Calls:
@@ -320,7 +321,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: CharacterController3D+BoolEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &114136969254293260
+--- !u!114 &6281819649694476858
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -329,21 +330,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1748042983550088}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 495c5d228cb1b1b46ad7955b3e39bbaa, type: 3}
+  m_Script: {fileID: 11500000, guid: d5b429f5ca4ea4c48997cf437f66e04d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
-  maxHealth: 3
-  healths:
+  energy: 3
+  maxEnergy: 5
+  energies:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  emptyHealth_even: {fileID: 21300002, guid: a319daa1bde2c8c4396199743e57a67c, type: 3}
-  emptyHealth_odd: {fileID: 21300000, guid: a319daa1bde2c8c4396199743e57a67c, type: 3}
-  filledHealth_even: {fileID: 21300004, guid: a319daa1bde2c8c4396199743e57a67c, type: 3}
-  filledHealth_odd: {fileID: 21300006, guid: a319daa1bde2c8c4396199743e57a67c, type: 3}
+  emptyEnergy_even: {fileID: 21300002, guid: a319daa1bde2c8c4396199743e57a67c, type: 3}
+  emptyEnergy_odd: {fileID: 21300000, guid: a319daa1bde2c8c4396199743e57a67c, type: 3}
+  filledEnery_even: {fileID: 21300004, guid: a319daa1bde2c8c4396199743e57a67c, type: 3}
+  filledEnery_odd: {fileID: 21300006, guid: a319daa1bde2c8c4396199743e57a67c, type: 3}
+  health: 1
+  maxHealth: 1
 --- !u!114 &6670586817416888546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,21 +378,25 @@ MonoBehaviour:
   g_CapsulCollider: {fileID: 136418108187490344}
   g_runSpeed: 7
   g_jumpForce: 15
+  g_canCrouch: 0
   f_Animation: {fileID: 9100000, guid: 9b810cac377fcf64d8fabf3bfaafb711, type: 2}
   f_BoxCollider: {fileID: 65636719771015362}
   f_CapsulCollider: {fileID: 136243252570692114}
   f_runSpeed: 10
   f_jumpForce: 15
+  f_canCrouch: 1
   b_Animation: {fileID: 9100000, guid: c52d82e0142822548a8e502b41633cb1, type: 2}
   b_BoxCollider: {fileID: 65887882919701396}
   b_CapsulCollider: {fileID: 136719725753699456}
   b_runSpeed: 8
   b_jumpForce: 2
+  b_canCrouch: 0
   s_Animation: {fileID: 9100000, guid: 26b8200c73ef5954f9091963836d7d85, type: 2}
   s_BoxCollider: {fileID: 65542106662327948}
   s_CapsulCollider: {fileID: 136810200256857302}
   s_runSpeed: 5
   s_jumpForce: 3
+  s_canCrouch: 0
 --- !u!330 &2427811345984168880
 ParticleSystemForceField:
   m_ObjectHideFlags: 0
@@ -1004,7 +1011,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4827420975914680}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &65636719771015362
 BoxCollider:
