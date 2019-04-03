@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Health : MonoBehaviour
+public class Energy : MonoBehaviour
 {
-    private static Health instance;
+    private static Energy instance;
 
-    public static Health MyInstance
+    public static Energy MyInstance
     {
         get
         {
             if (instance == null)
             {
-                instance = FindObjectOfType<Health>();
+                instance = FindObjectOfType<Energy>();
             }
             return instance;
         }

@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 54727811432748682}
   - component: {fileID: 114063573016221108}
   - component: {fileID: 114043851804476764}
-  - component: {fileID: 114136969254293260}
+  - component: {fileID: 6281819649694476858}
   - component: {fileID: 6670586817416888546}
   - component: {fileID: 114574107724588428}
   - component: {fileID: 2427811345984168880}
@@ -321,7 +321,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: CharacterController3D+BoolEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &114136969254293260
+--- !u!114 &6281819649694476858
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -330,12 +330,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1748042983550088}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 495c5d228cb1b1b46ad7955b3e39bbaa, type: 3}
+  m_Script: {fileID: 11500000, guid: d5b429f5ca4ea4c48997cf437f66e04d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   energy: 3
   maxEnergy: 5
-  energies: []
+  energies:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   emptyEnergy_even: {fileID: 21300002, guid: a319daa1bde2c8c4396199743e57a67c, type: 3}
   emptyEnergy_odd: {fileID: 21300000, guid: a319daa1bde2c8c4396199743e57a67c, type: 3}
   filledEnery_even: {fileID: 21300004, guid: a319daa1bde2c8c4396199743e57a67c, type: 3}

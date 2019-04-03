@@ -13,7 +13,7 @@ public class ShapeshiftController : MonoBehaviour
     private Animator animator;                                              // have to change the Animator to the correct one for every Shape
     private CharacterController3D controller3D;                             // used to change CharacterControll related values
     private PlayerMovement playerMovement;                                  // relevant for Inputs and to change runSpeed
-    private Health resource;
+    private Energy resource;
     private Shapes currentShape = Shapes.fox;                               // current shape, needed for checks
 
     //Particle system for Shapeshifteffect
@@ -75,7 +75,7 @@ public class ShapeshiftController : MonoBehaviour
         animator = GetComponent<Animator>();
         controller3D = GetComponent<CharacterController3D>();
         playerMovement = GetComponent<PlayerMovement>();
-        resource = GetComponent<Health>();
+        resource = GetComponent<Energy>();
 
         //particle ShapeShift stuff
         shapeShiftPsList = shapeShiftParticleSystem.GetComponentsInChildren<ParticleSystem>();
