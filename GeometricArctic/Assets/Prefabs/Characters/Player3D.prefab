@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 54727811432748682}
   - component: {fileID: 114063573016221108}
   - component: {fileID: 114043851804476764}
+  - component: {fileID: 6958517160015938593}
   - component: {fileID: 6281819649694476858}
   - component: {fileID: 6670586817416888546}
   - component: {fileID: 114574107724588428}
@@ -321,6 +322,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: CharacterController3D+BoolEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &6958517160015938593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748042983550088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98d90fa6147acc148aa89a59645540bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &6281819649694476858
 MonoBehaviour:
   m_ObjectHideFlags: 0
