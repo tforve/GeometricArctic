@@ -126,7 +126,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.K))
         {
-            energy.Hit(1);
+            energy.ReplanishEnergy(1);
         }
 
     }

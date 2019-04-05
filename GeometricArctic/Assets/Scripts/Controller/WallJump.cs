@@ -6,23 +6,31 @@ public class WallJump : MonoBehaviour
 {
     [SerializeField] private float maxDistance = 2.85f;
     private CharacterController3D characterController;
+    private ShapeshiftController shapeshiftController;
+    private PlayerMovement playerMovement;
     public LayerMask m_WhatIsWall;
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        characterController = GetComponent<CharacterController3D>(); 
+        characterController = GetComponent<CharacterController3D>();
+        shapeshiftController = GetComponent<ShapeshiftController>();
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
     // Update is called once per frame
     void Update()
     {
         RaycastHit hit;
-        
-        if(Physics.Raycast(this.transform.position, transform.TransformDirection(Vector3.right), out hit, maxDistance, m_WhatIsWall) ||Physics.Raycast(this.transform.position, transform.TransformDirection(Vector3.left), out hit, maxDistance, m_WhatIsWall) )
+        if (shapeshiftController.MyCanWalljump)
         {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.right) * maxDistance, Color.red);
-            characterController.MyIsGrounded = true;            
-        }        
+            if (Physics.Raycast(this.transform.position, transform.TransformDirection(Vector3.right), out hit, maxDistance, m_WhatIsWall) || Physics.Raycast(this.transform.position, transform.TransformDirection(Vector3.left), out hit, maxDistance, m_WhatIsWall))
+            {
+                characterController.MyIsGrounded = true;
+               // playerMovement.OnLanding();
+
+                // Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.right) * maxDistance, Color.red);
+            }
+        }
     }
 }

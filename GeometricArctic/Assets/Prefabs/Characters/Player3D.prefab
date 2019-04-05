@@ -52,7 +52,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1454305307075288}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 8b14496f40b4ff5498dd142b8c466c67, type: 2}
   m_IsTrigger: 0
   m_Enabled: 0
   m_Radius: 0.69047844
@@ -201,7 +201,7 @@ SpriteRenderer:
   m_SortingLayerID: -1074040441
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c0e4cebb092f6754dad296b98ccc477a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 26de877a6dc189d4d893fbf8b3e45b1e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_MovementSmoothing: 0.05
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 535
+    m_Bits: 2583
   m_JumpForce: 15
   m_AirControl: 1
   m_FallMultiplier: 2.5
@@ -334,6 +334,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98d90fa6147acc148aa89a59645540bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxDistance: 2.85
+  m_WhatIsWall:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!114 &6281819649694476858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,8 +351,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: 3
-  maxEnergy: 5
+  maxEnergy: 6
   energies:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -360,6 +365,7 @@ MonoBehaviour:
   filledEnery_odd: {fileID: 21300006, guid: a319daa1bde2c8c4396199743e57a67c, type: 3}
   health: 1
   maxHealth: 1
+  noEnergy: {fileID: 0}
 --- !u!114 &6670586817416888546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,24 +398,28 @@ MonoBehaviour:
   g_runSpeed: 7
   g_jumpForce: 15
   g_canCrouch: 0
+  g_canWalljump: 0
   f_Animation: {fileID: 9100000, guid: 9b810cac377fcf64d8fabf3bfaafb711, type: 2}
   f_BoxCollider: {fileID: 65636719771015362}
   f_CapsulCollider: {fileID: 136243252570692114}
   f_runSpeed: 10
   f_jumpForce: 15
   f_canCrouch: 1
+  f_canWalljump: 1
   b_Animation: {fileID: 9100000, guid: c52d82e0142822548a8e502b41633cb1, type: 2}
   b_BoxCollider: {fileID: 65887882919701396}
   b_CapsulCollider: {fileID: 136719725753699456}
   b_runSpeed: 8
   b_jumpForce: 2
   b_canCrouch: 0
+  b_canWalljump: 0
   s_Animation: {fileID: 9100000, guid: 26b8200c73ef5954f9091963836d7d85, type: 2}
   s_BoxCollider: {fileID: 65542106662327948}
   s_CapsulCollider: {fileID: 136810200256857302}
   s_runSpeed: 5
   s_jumpForce: 3
   s_canCrouch: 0
+  s_canWalljump: 0
 --- !u!330 &2427811345984168880
 ParticleSystemForceField:
   m_ObjectHideFlags: 0

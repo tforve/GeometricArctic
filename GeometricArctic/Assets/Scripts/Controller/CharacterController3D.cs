@@ -70,6 +70,8 @@ public class CharacterController3D : MonoBehaviour
 
 	}
 
+
+	// DEBUG ONLY ------------
 	private bool draw = true;
 
 	private void OnDrawGizmos()
@@ -81,6 +83,7 @@ public class CharacterController3D : MonoBehaviour
 			Gizmos.DrawSphere(m_GroundCheck.position , k_GroundedRadius);
 		}
 	}
+	// -----------------------
 
 	private void FixedUpdate()
 	{
