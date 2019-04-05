@@ -68,8 +68,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
-            animator.SetBool("HasLanded", false);
-            animator.SetBool("IsJumping", true);
+            Jump();
         }
 
         if (Input.GetButtonDown("Crouch"))
@@ -140,6 +139,19 @@ public class PlayerMovement : MonoBehaviour
     {
         animator.SetBool("HasLanded", true);
         animator.SetBool("IsJumping", false);
+        animator.SetBool("TouchWall", false);
+    }
+
+    public void Jump()
+    {        
+        animator.SetBool("HasLanded", false);
+        animator.SetBool("IsJumping", true);
+    }
+
+    public void TouchWall()
+    {
+        animator.SetBool("TouchWall", true);
+        // animator.SetBool("IsJumping", false);
     }
 
     private void FixedUpdate()

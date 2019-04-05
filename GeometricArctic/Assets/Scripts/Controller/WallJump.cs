@@ -26,10 +26,15 @@ public class WallJump : MonoBehaviour
         {
             if (Physics.Raycast(this.transform.position, transform.TransformDirection(Vector3.right), out hit, maxDistance, m_WhatIsWall) || Physics.Raycast(this.transform.position, transform.TransformDirection(Vector3.left), out hit, maxDistance, m_WhatIsWall))
             {
+                playerMovement.TouchWall();
                 characterController.MyIsGrounded = true;
-               // playerMovement.OnLanding();
+                // add new Animation on Wall
 
                 // Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.right) * maxDistance, Color.red);
+            }
+            else
+            {
+                
             }
         }
     }
