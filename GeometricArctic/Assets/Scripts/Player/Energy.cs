@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+
 
 public class Energy : MonoBehaviour
 {
@@ -27,10 +29,14 @@ public class Energy : MonoBehaviour
     [SerializeField] private Image[] energies;
     [SerializeField] private Sprite emptyEnergy_even, emptyEnergy_odd;
     [SerializeField] private Sprite filledEnery_even, filledEnery_odd;
+    private bool isTimerRunning = false;                                    //boolean for Coroutine 
 
     [Header("Health")]
     [SerializeField] private int health;
     [SerializeField] private int maxHealth;
+
+    [Header("UI")]
+    [SerializeField] private TextMeshProUGUI noEnergy;
 
     private GameMaster gameMaster;
 
@@ -72,22 +78,29 @@ public class Energy : MonoBehaviour
         UpdateEnergy();
     }
 
-    /// <summary>
-    /// Player Dies. Needs to be implemented.
-    /// </summary>> 
-    private void Empty()
+    /// <summary> Enery to shapeshift is empty </summary> 
+    public void Empty()
     {
+        if (!isTimerRunning)
+        {
+            StartCoroutine(textEnableTimer(4.0f));
+        }
         energy = 0;
-        Debug.Log("Player has no Energy to Shapeshift");
     }
 
-    /// <summary>
-    /// Update Current Energy to correct amount.
-    /// </summary>
+    private IEnumerator textEnableTimer(float waitTime)
+    {
+        isTimerRunning = true;
+        noEnergy.enabled = true;
+        yield return new WaitForSeconds(waitTime);
+        isTimerRunning = false;
+        noEnergy.enabled = false;
+    }
+
+    /// <summary> Update Current Energy to correct amount.</summary>
     private void UpdateEnergy()
     {
         if (energy > maxEnergy) energy = maxEnergy;
-        if (energy <= 0) Empty();
 
         for (int currentTriangle = 0; currentTriangle < energies.Length; currentTriangle++)
         {
@@ -155,10 +168,8 @@ public class Energy : MonoBehaviour
     /// </summary>> 
     private void Die()
     {
-        // Debug Only. Delete later
-        Debug.Log("Player is Dead");
+        // cooler Restart scene needed
         gameMaster.LoadCurrentScene();
-
     }
 
     private void UpdateHealth()

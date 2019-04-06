@@ -12,7 +12,7 @@ public class CharacterController3D : MonoBehaviour
 	[Header("Jumping")]
 	[SerializeField] private float 	m_JumpForce = 400f;								// Amount of force added when the player jumps.
 	[SerializeField] private bool 	m_AirControl = false;							// Whether or not a player can steer while jumping;
-	[SerializeField] private float	m_FallMultiplier = 2.5f;							// Adds extra Gravity to the Fall
+	[SerializeField] private float	m_FallMultiplier = 2.5f;						// Adds extra Gravity to the Fall
 	[SerializeField] private float 	m_LowJumpMultiplier = 2.0f;						// needed for Jumping higher by hold the Jump button
 	
 	[Header("Checkers")]
@@ -37,7 +37,7 @@ public class CharacterController3D : MonoBehaviour
 	[SerializeField] private Camera mainCam;				// to adjust while Crouching 
 
 	[Header("Events")][Space]
-	public UnityEvent	OnLandEvent;
+	public UnityEvent	OnLandEvent;						// Event triggered when player hits ground
 
 	[System.Serializable]
 	public class BoolEvent : UnityEvent<bool> { }
@@ -52,6 +52,11 @@ public class CharacterController3D : MonoBehaviour
 		get {return m_JumpForce;}
 		set {m_JumpForce = value;}
 	}
+
+	public bool MyIsGrounded
+	{
+		set {m_isGrounded = value;}
+	}
 	
 	private void Awake()
 	{
@@ -65,6 +70,8 @@ public class CharacterController3D : MonoBehaviour
 
 	}
 
+
+	// DEBUG ONLY ------------
 	private bool draw = true;
 
 	private void OnDrawGizmos()
@@ -76,6 +83,7 @@ public class CharacterController3D : MonoBehaviour
 			Gizmos.DrawSphere(m_GroundCheck.position , k_GroundedRadius);
 		}
 	}
+	// -----------------------
 
 	private void FixedUpdate()
 	{

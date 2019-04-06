@@ -27,6 +27,12 @@ public class ShapeshiftController : MonoBehaviour
     {
         get { return canCrouch; }
     }
+    //Walljumping
+    private bool canWalljump = false;
+    public bool MyCanWalljump
+    {
+        get { return canWalljump; }
+    }
 
     [Header("Girl")]
     [SerializeField] private RuntimeAnimatorController g_Animation;
@@ -35,6 +41,7 @@ public class ShapeshiftController : MonoBehaviour
     [SerializeField] private float g_runSpeed = 7.0f;
     [SerializeField] private float g_jumpForce = 15.0f;
     [SerializeField] private bool g_canCrouch = false;
+    [SerializeField] private bool g_canWalljump = false;
     [Header("Fox")]
     [SerializeField] private RuntimeAnimatorController f_Animation;
     [SerializeField] private BoxCollider f_BoxCollider;
@@ -42,6 +49,7 @@ public class ShapeshiftController : MonoBehaviour
     [SerializeField] private float f_runSpeed = 10.0f;
     [SerializeField] private float f_jumpForce = 15.0f;
     [SerializeField] private bool f_canCrouch = true;
+    [SerializeField] private bool f_canWalljump = true;
     [Header("Bear")]
     [SerializeField] private RuntimeAnimatorController b_Animation;
     [SerializeField] private BoxCollider b_BoxCollider;
@@ -49,6 +57,7 @@ public class ShapeshiftController : MonoBehaviour
     [SerializeField] private float b_runSpeed = 8.0f;
     [SerializeField] private float b_jumpForce = 2.0f;
     [SerializeField] private bool b_canCrouch = false;
+    [SerializeField] private bool b_canWalljump = false;
     [Header("Seal")]
     [SerializeField] private RuntimeAnimatorController s_Animation;
     [SerializeField] private BoxCollider s_BoxCollider;
@@ -56,6 +65,8 @@ public class ShapeshiftController : MonoBehaviour
     [SerializeField] private float s_runSpeed = 5.0f;
     [SerializeField] private float s_jumpForce = 3.0f;
     [SerializeField] private bool s_canCrouch = false;
+    [SerializeField] private bool s_canWalljump = false;
+
 
     private List<Collider> oldColliders = new List<Collider>();             // List of all active Colliders
     private SpriteRenderer spriteRenderer;
@@ -65,8 +76,11 @@ public class ShapeshiftController : MonoBehaviour
     void Awake()
     {
         HandleColliders();
-        g_BoxCollider.enabled = true;
-        g_CapsulCollider.enabled = true;
+        //Change later
+        f_BoxCollider.enabled = true;
+        f_CapsulCollider.enabled = true;
+        canCrouch = f_canCrouch;
+        canWalljump = f_canWalljump;
     }
 
     void Start()
@@ -147,7 +161,9 @@ public class ShapeshiftController : MonoBehaviour
     /// <param name="shapes"> human, fox, bear, seal</param>
     public void SwitchShape(Shapes shapes)
     {
-        if (energy.MyEnergy > 0)
+        if (energy.MyEnergy <= 0 && currentShape != shapes) energy.Empty();
+
+        else if (energy.MyEnergy > 0)
         {
             if (currentShape != shapes)
             {
@@ -164,14 +180,13 @@ public class ShapeshiftController : MonoBehaviour
                         // collider aktivieren
                         g_BoxCollider.enabled = true;
                         g_CapsulCollider.enabled = true;
-                        // animator austauschen
-                        animator.runtimeAnimatorController = g_Animation;
+                        animator.runtimeAnimatorController = g_Animation;       // animator austauschen
                         // evtl. controlls austauschen
                         // movespeed, jumpForce etc. anpassen
                         playerMovement.MyRunSpeed = g_runSpeed;
                         controller3D.MyJumpforce = g_jumpForce;
-                        // set crouch
-                        canCrouch = g_canCrouch;
+                        canCrouch = g_canCrouch;                                // set crouch
+                        canWalljump = g_canWalljump;                            // set Walljump
                         // ressource Cost for Shapeshift
                         energy.DrainEnergy(1);
                         break;
@@ -179,12 +194,12 @@ public class ShapeshiftController : MonoBehaviour
                     case Shapes.fox:
                         f_BoxCollider.enabled = true;
                         f_CapsulCollider.enabled = true;
-                        // special Crouch collider
-                        controller3D.SetCrouchCollider();
+                        controller3D.SetCrouchCollider();                       // special Crouch collider
                         animator.runtimeAnimatorController = f_Animation;
                         playerMovement.MyRunSpeed = f_runSpeed;
                         controller3D.MyJumpforce = f_jumpForce;
                         canCrouch = f_canCrouch;
+                        canWalljump = f_canWalljump;
                         energy.DrainEnergy(1);
                         break;
 
@@ -195,6 +210,7 @@ public class ShapeshiftController : MonoBehaviour
                         playerMovement.MyRunSpeed = b_runSpeed;
                         controller3D.MyJumpforce = b_jumpForce;
                         canCrouch = b_canCrouch;
+                        canWalljump = b_canWalljump;
                         energy.DrainEnergy(1);
                         break;
 
@@ -205,6 +221,7 @@ public class ShapeshiftController : MonoBehaviour
                         playerMovement.MyRunSpeed = s_runSpeed;
                         controller3D.MyJumpforce = s_jumpForce;
                         canCrouch = s_canCrouch;
+                        canWalljump = s_canWalljump;
                         energy.DrainEnergy(1);
                         break;
                 }
