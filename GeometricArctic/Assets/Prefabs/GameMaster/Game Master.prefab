@@ -44,4 +44,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelStart: {fileID: 0}
-  lastCheckPointPos: {x: 13.15, y: 2.36, z: 1.065}

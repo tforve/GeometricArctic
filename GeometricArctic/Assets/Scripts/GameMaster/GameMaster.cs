@@ -22,12 +22,19 @@ public class GameMaster : MonoBehaviour
     // --------------
 
     [SerializeField] private GameObject levelStart;
-    [SerializeField] private Vector3 lastCheckPointPos;               // Save the last transform.position of any Checkpoints
+    private Vector3 lastCheckPointPos;                  // Save the last transform.position of any Checkpoints
+    private Trigger currentTrigger;
 
     public Vector3 MyLastCheckpointPos
     {
         get { return lastCheckPointPos; }
         set { lastCheckPointPos = value; }
+    }
+
+    public Trigger MyCurrentTrigger
+    {
+        get { return currentTrigger; }
+        set { currentTrigger = value; }
     }
 
     void Start()
@@ -49,6 +56,13 @@ public class GameMaster : MonoBehaviour
     public void SetLastCheckpoint(Vector3 pos)
     {
         lastCheckPointPos = pos;
+    }
+
+    ///<summary> Call Trigger Methode of current Trigger </summary>
+    public void TriggerHandle(Trigger trigger)
+    {
+        currentTrigger = trigger;
+        currentTrigger.TriggerHandle();
     }
 }
 

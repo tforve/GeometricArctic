@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Experimental.UIElements;
 
 public enum Shapes { human, fox, bear, seal };                          // Forms the Player can switch to 
-public enum Interactables { checkpoint, block, handle };                // Interactables Player can use
+public enum Interactables { checkpoint, block, trigger };                // Interactables Player can use
 
 [RequireComponent(typeof(CharacterController3D))]
 public class PlayerMovement : MonoBehaviour
@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     private Interactables interactables;
     private Vector3 lastCheckpointPos;                                  // transform.position of last Checkpoint collided with
     private bool isOnTrigger = false;                                   // bool to check if near to interactable Trigger, has to be changed on ALL Interactables
+    private Trigger currentTrigger;
 
     // Energy for debugging
     private Energy energy;
@@ -46,6 +47,16 @@ public class PlayerMovement : MonoBehaviour
     public bool MyIsOnTrigger
     {
         set { isOnTrigger = value; }
+    }
+
+    public Trigger MyCurrentTrigger
+    {
+        set { currentTrigger = value; }
+    }
+
+    public Interactables MyCurrentInteractable
+    {
+        set { interactables = value; }
     }
 
     // --------------------
@@ -76,7 +87,7 @@ public class PlayerMovement : MonoBehaviour
             if (shapeshiftController.MyCanCrouch)           // only fox can Crouch
             {
                 crouch = true;
-            }
+            }   
         }
         else if (Input.GetButtonUp("Crouch"))
         {
@@ -111,8 +122,9 @@ public class PlayerMovement : MonoBehaviour
                 case Interactables.block:
                     // need bearForm - can Push and pull heavy Objects
                     break;
-                case Interactables.handle:
+                case Interactables.trigger:
                     // need girlForm - can use handles
+                    gameMaster.TriggerHandle(currentTrigger);
                     break;
             }
         }
@@ -125,8 +137,13 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.K))
         {
+            energy.Hit(1);
+        }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
             energy.ReplanishEnergy(1);
         }
+
 
     }
 
@@ -143,7 +160,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     public void Jump()
-    {        
+    {
         animator.SetBool("HasLanded", false);
         animator.SetBool("IsJumping", true);
     }
