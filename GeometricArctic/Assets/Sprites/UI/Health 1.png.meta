@@ -2,10 +2,10 @@ fileFormatVersion: 2
 guid: a319daa1bde2c8c4396199743e57a67c
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Health 1_0
-    21300002: Health 1_1
-    21300004: Health 1_2
-    21300006: Health 1_3
+    21300000: Energy 1_0
+    21300002: Energy 1_1
+    21300004: Energy 1_2
+    21300006: Energy 1_3
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -88,7 +88,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Health 1_0
+      name: Energy 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -96,7 +96,7 @@ TextureImporter:
         width: 425
         height: 368
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -108,7 +108,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Health 1_1
+      name: Energy 1_1
       rect:
         serializedVersion: 2
         x: 445
@@ -116,7 +116,7 @@ TextureImporter:
         width: 425
         height: 368
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -128,7 +128,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Health 1_2
+      name: Energy 1_2
       rect:
         serializedVersion: 2
         x: 917
@@ -136,7 +136,7 @@ TextureImporter:
         width: 391
         height: 338
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -148,7 +148,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Health 1_3
+      name: Energy 1_3
       rect:
         serializedVersion: 2
         x: 1355
@@ -156,7 +156,7 @@ TextureImporter:
         width: 390
         height: 338
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

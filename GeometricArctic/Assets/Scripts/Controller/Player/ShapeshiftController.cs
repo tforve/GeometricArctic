@@ -27,12 +27,20 @@ public class ShapeshiftController : MonoBehaviour
     {
         get { return canCrouch; }
     }
+
     //Walljumping
     private bool canWalljump = false;
     public bool MyCanWalljump
     {
         get { return canWalljump; }
     }
+
+    //Shape
+    public Shapes MyCurrenShape
+    {
+        get { return currentShape; }
+    }
+    // -----------------------
 
     [Header("Girl")]
     [SerializeField] private RuntimeAnimatorController g_Animation;

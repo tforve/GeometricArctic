@@ -33,7 +33,7 @@ public class Energy : MonoBehaviour
 
     [Header("Health")]
     [SerializeField] private int health;
-    [SerializeField] private int maxHealth;
+    [SerializeField] private int maxHealth = 1;
 
     [Header("UI")]
     [SerializeField] private TextMeshProUGUI noEnergy;
