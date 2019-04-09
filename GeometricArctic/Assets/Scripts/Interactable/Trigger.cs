@@ -40,7 +40,7 @@ public class Trigger : MonoBehaviour
     }
 
     public void TriggerHandle()
-    {z
+    {
         if (shapeshiftController.MyCurrenShape != Shapes.human)
         {
             txt_WrongForm.SetActive(true);
