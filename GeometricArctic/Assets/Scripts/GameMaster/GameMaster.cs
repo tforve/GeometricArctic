@@ -24,6 +24,7 @@ public class GameMaster : MonoBehaviour
     [SerializeField] private GameObject levelStart;
     private Vector3 lastCheckPointPos;                  // Save the last transform.position of any Checkpoints
     private Trigger currentTrigger;
+    [SerializeField] private Animator blendAnim;        // Blend in When Level Starts
 
     public Vector3 MyLastCheckpointPos
     {
@@ -39,6 +40,7 @@ public class GameMaster : MonoBehaviour
 
     void Start()
     {
+        blendAnim.SetBool("blendIn" , true);
         //Setup Levelstart as std 
         lastCheckPointPos.x = levelStart.transform.position.x;
         lastCheckPointPos.y = levelStart.transform.position.y;

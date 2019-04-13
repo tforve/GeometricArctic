@@ -7,15 +7,18 @@ using TMPro;
 
 public class MenuControll : MonoBehaviour
 {
-    [SerializeField] private GameObject startButton, exitButton;
-    [SerializeField] private CanvasGroup title;
+    [SerializeField] private GameObject startButton, exitButton, continueButton;
+    [SerializeField] private Image title;
+    [SerializeField] private Animator titelAnim;
+    [SerializeField] private Animator blendAnim;
 
-    [SerializeField] private float showMenuIn = 7.0f;
+
+    [SerializeField] private float showMenuIn = 7.5f;
     [SerializeField] private float lerpTime = 0.5f;
 
     public void StartNewGame()
     {
-        SceneManager.LoadScene("Level00_Tutorial");
+        StartCoroutine(StartNewGameRoutine());
     }
 
     public void QuitGame()
@@ -27,21 +30,34 @@ public class MenuControll : MonoBehaviour
     {
         startButton.SetActive(false);
         exitButton.SetActive(false);
+        continueButton.SetActive(false);
+
         StartCoroutine(ShowTitel());
+    }
+
+    public IEnumerator StartNewGameRoutine()
+    {
+        yield return new WaitForSeconds(0.7f);
+        blendAnim.SetBool("blendIn", true);
+        yield return new WaitForSeconds(5.0f);
+
+        SceneManager.LoadScene("Level00_Tutorial");
     }
 
     public IEnumerator ShowTitel()
     {
         yield return new WaitForSeconds(2.0f);
-        StartCoroutine(FadeTitle(title, title.alpha, 1.0f, lerpTime));
+        //StartCoroutine(FadeTitle(title, title.color.a, 1.0f, lerpTime));
+        titelAnim.SetBool("fadeIn", true);
         yield return new WaitForSeconds(showMenuIn);
-        StartCoroutine(FadeTitle(title, title.alpha, 0.0f, lerpTime));
+       // StartCoroutine(FadeTitle(title, title.color.a, 0.0f, lerpTime));
         yield return new WaitForSeconds(3.0f);
         exitButton.SetActive(true);
+        continueButton.SetActive(true);
         startButton.SetActive(true);
     }
 
-    public IEnumerator FadeTitle(CanvasGroup title, float start, float end, float lerpTime)
+    public IEnumerator FadeTitle(Image title, float start, float end, float lerpTime)
     {
         float timeStartedLerping = Time.time;
         float timeSinceStarted = Time.time - timeStartedLerping;
@@ -53,8 +69,8 @@ public class MenuControll : MonoBehaviour
             percentageComplete = timeSinceStarted / lerpTime;
 
             float currentValue = Mathf.Lerp(start, end, percentageComplete);
-
-            title.alpha = currentValue;
+            float tmp = this.title.color.a;
+            tmp = currentValue;
 
             if (percentageComplete >= 1) break;
             yield return new WaitForEndOfFrame();
@@ -63,13 +79,5 @@ public class MenuControll : MonoBehaviour
    
     }
 
-    // public void FadeIn()
-    // {
-    //     StartCoroutine(FadeTitle(title, title.alpha, 1.0f, lerpTime));
-    // }
 
-    // public void FadeOut()
-    // {
-    //     StartCoroutine(FadeTitle(title, title.alpha, 0.0f, lerpTime));
-    // }
 }
