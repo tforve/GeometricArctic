@@ -7,7 +7,7 @@ using TMPro;
 
 public class MenuControll : MonoBehaviour
 {
-    [SerializeField] private GameObject startButton, exitButton;
+    [SerializeField] private GameObject startButton, exitButton, continueButton;
     [SerializeField] private Image title;
     [SerializeField] private Animator titelAnim;
     [SerializeField] private Animator blendAnim;
@@ -30,6 +30,8 @@ public class MenuControll : MonoBehaviour
     {
         startButton.SetActive(false);
         exitButton.SetActive(false);
+        continueButton.SetActive(false);
+
         StartCoroutine(ShowTitel());
     }
 
@@ -51,6 +53,7 @@ public class MenuControll : MonoBehaviour
        // StartCoroutine(FadeTitle(title, title.color.a, 0.0f, lerpTime));
         yield return new WaitForSeconds(3.0f);
         exitButton.SetActive(true);
+        continueButton.SetActive(true);
         startButton.SetActive(true);
     }
 
